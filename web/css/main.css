@@ -1,0 +1,241 @@
+.content {
+    -webkit-box-shadow: rgba(0,0,0,0.2) 0 2px 4px 0;
+    -moz-box-shadow: rgba(0,0,0,0.2) 0 2px 4px 0;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 4px 0;
+}
+
+header {
+    padding-top:20px;
+    margin-left:-15px;
+    margin-right:-15px;
+    padding-bottom:20px;
+    background: #c65a4d;
+    -webkit-box-shadow: rgba(0,0,0,0.2) 0 2px 4px 0;
+    -moz-box-shadow: rgba(0,0,0,0.2) 0 2px 4px 0;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 4px 0;
+    position: relative;
+    z-index: 3;
+}
+
+.ul_header li {
+    font-weight: bold;
+    float:right;
+    margin-top:24px;
+    padding-right:15px;
+    display: inline-block;
+    color:white;
+}
+
+.ul_header li:hover {
+    cursor: pointer;
+    color: #834c35;
+    transition: color .3s;
+}
+
+.subheader {
+    margin-left:-15px;
+    margin-right:-15px;
+    background: url('../images/background.jpg');
+    background-size: cover;
+}
+
+.subheader h1 {
+    marging-left:20px;
+    padding:40px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    line-height: 1.333;
+}
+
+.hightitle h1 {
+
+    padding-top:40px;
+    margin-left:20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+.hightitle h4 {
+    color: #606778;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.images {
+    text-align: center
+}
+
+.images li {
+    display: inline-block;
+    list-style: none;
+}
+
+.center {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.hightitle {
+    background-color: #fff;
+    margin-left: -15px;
+    margin-right: -15px;
+    -webkit-box-shadow: rgba(0,0,0,0.2) 0 3px 4px -2px;
+    -moz-box-shadow: rgba(0,0,0,0.2) 0 3px 4px -2px;
+    box-shadow: rgba(0,0,0,0.2) 0 3px 4px -2px;
+    padding-bottom:15px;
+    position: relative;
+    z-index: 3;
+}
+
+#content {
+    margin-left: -15px;
+    margin-right: -15px;
+    background: #f2dbd8;
+}
+
+.informations {
+    background: #fff;
+    border-radius: 3px;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    margin-right: -15px;
+}
+
+.informations h3 {
+    font-weight: 500;
+}
+
+hr {
+    border-bottom: 1px solid #d2d4d9;
+}
+
+.informations i {
+    color:#c65a4d;
+    font-size:20px !important;
+    margin-right:10px;
+}
+
+.section_new {
+    font-size:16px;
+    font-weight: 500;
+}
+
+.section_informations{
+    font-size: 18px;
+}
+
+#datepicker {
+
+}
+
+.datepicker.datepicker-inline {
+    margin-top: 20px;
+    background: #fff;
+    padding:10px;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+}
+
+.tabstep {
+    background: #c65a4d;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.datepicker-inline {
+    width: 100%;
+}
+
+.new.day {
+    font-size: 20px;
+}
+
+.day {
+    font-size: 20px;
+}
+
+.table-condensed {
+    width: 100%;
+}
+
+.dow {
+    text-transform: capitalize;
+}
+
+.next {
+    background: #c65a4d;
+    color: white;
+    font-size: 20px;
+}
+
+.prev {
+    background: #c65a4d;
+    color: white;
+    font-size: 20px;
+}
+
+.datepicker-switch {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.datepicker table tr td.active.active {
+    background-color: #c65a4d;
+    background-image: none;
+}
+
+datepicker table tr td.active:hover, .datepicker table tr td.active.active:hover, .datepicker table tr td.active:hover:hover {
+    background-color: #c65a4d;
+
+}
+
+.datepicker .next:hover, .prev:hover {
+    color:black;
+}
+
+#dateValide {
+    margin-top:10px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.progress {
+    margin-left:20px;
+    margin-top: 30px;
+}
+
+.datepicker {
+    direction: ltr;
+    width: 510px;
+}
+
+.badge {
+
+    color: #5cb85c;
+    background-color: #fff;
+}
+
+.blockformstep1 {
+    padding: 15px;
+}
+
+.glyphicon {
+    color:#c65a4d;
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}

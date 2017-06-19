@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Billetterie du Louvre | {% block title %}{% endblock %}</title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,500" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    {% endblock %}
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <header class="clearfix">
+        <div class="container">
+            <div class="col-md-6">
+                <img class="logo" src="{{ asset('images/logo.png') }}" alt="logo du louvre" width="150px"/>
+            </div>
+            <div class="col-md-6">
+                <ul class="ul_header">
+                    <li>Service client</li>
+                    <li>EUR(€)</li>
+                    <li>Français</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="subheader clearfix">
+        {% block subheader %}
+        {% endblock %}
+    </div>
+
+    <div class="hightitle clearfix">
+    {% block hightitle %}
+    {% endblock %}
+    </div>
+
+        <div id="content" class="clearfix">
+            {% block body %}
+
+            {% endblock %}
+        </div>
+
+    <footer>
+        <div class="container">
+            <h4>Billetterie du Louvre © {{ 'now'|date('Y') }}</h4>
+        </div>
+    </footer>
+</div>
+
+{% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+{% endblock %}
+
+</body>
+</html>
