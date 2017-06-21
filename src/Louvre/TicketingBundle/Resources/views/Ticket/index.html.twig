@@ -1,5 +1,4 @@
 {% extends "LouvreTicketingBundle::layout.html.twig" %}
-
 {% block title %}
     {{ parent() }}
 {% endblock %}
@@ -23,22 +22,91 @@
 
 {% block body %}
     <div class="container">
-        <div class="col-md-6">
+        <div class="col-md-7">
             <div class="date_reserve">
-                <h3 class="tabstep">Votre réservation</h3>
+                {{ form_start(form) }}
+                {{ form_errors(form) }}
+                <h3 class="tabstep">Etape 1 : Date de votre visite</h3>
                 <div class="blockformstep1">
-                    <label>Date de votre visite :</label>
-                    <div id="datepicker">
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <div id="datepicker"></div>
+                            {{ form_widget(form.dateVisit) }}
+                        </div>
+                        <div class="col-md-6">
+                            <div id="legend">
+                                <div class="legend_date">
+                                    <span id="date_select"><p>15</p></span>Date selectionnée
+                                </div>
+                                <div class="legend_date">
+                                    <span id="date_available"><p>15</p></span>Date disponible
+                                </div>
+                                <div class="legend_date">
+                                    <span id="date_disable"><p>15</p></span>Date indisponible
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
+
             <div class="date_reserve">
-                <h3 class="tabstep">Etape 2 : Type de billet</h3>
+                    <h3 class="tabstep">Etape 2 : Type de billet</h3>
+                <div class="blockformstep1 clearfix">
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                {{ form_widget(form.typeTicket) }}
+                            </div>
+                            <div class="col-md-8">
+                                <p class="infos-block">
+                                    <span class="bold"> - Billet journée :</span> valable de 9h à 18h
+                                    <br/>
+                                    <span class="bold"> - Billet demi-journée :</span> de 14h à 18h
+                                </p>
+                            </div>
+                       </div>
+                </div>
             </div>
 
+            <div class="date_reserve">
+                <h3 class="tabstep">Etape 3 : Nombre de billet</h3>
+                <div class="blockformstep1 clearfix">
+                    <div class="form-inline" data-prototype="
+				{% filter escape %}
+					{{ include('LouvreTicketingBundle::addticket.html.twig')}}
+				{% endfilter %}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="date_reserve">
+                <h3 class="tabstep">Etape 4 : Indiquez votre e-mail</h3>
+                <div class="blockformstep1 clearfix">
+                    <div class="form-group">
+                        <div class="col-md-5">
+                            {{ form_widget(form.email) }}
+                        </div>
+                        <div class="col-md-7">
+                            <p class="vertical-align">Vos billets vous seront envoyez sur cette e-mail
+                                </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="date_reserve">
+                <h3 class="tabstep">Etape 5 : Finalisez votre commande</h3>
+                <div class="blockformstep1">
+                    <div class="form-group">
+                        {{ form_label(form.typeTicket) }}
+                        {{ form_widget(form.typeTicket) }}
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
         <div class="informations clearfix">
             <h3>Aperçu</h3>
             <hr/>

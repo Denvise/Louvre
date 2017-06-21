@@ -124,25 +124,12 @@ hr {
 }
 
 .section_new {
-    font-size:16px;
+    font-size:14px;
     font-weight: 500;
 }
 
 .section_informations{
-    font-size: 18px;
-}
-
-#datepicker {
-
-}
-
-.datepicker.datepicker-inline {
-    margin-top: 20px;
-    background: #fff;
-    padding:10px;
-    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
-    -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    font-size: 16px;
 }
 
 .tabstep {
@@ -150,75 +137,9 @@ hr {
     padding: 15px;
     font-family: 'Roboto', sans-serif;
     color: white;
+    font-size:16px;
 }
 
-.datepicker-inline {
-    width: 100%;
-}
-
-.new.day {
-    font-size: 20px;
-}
-
-.day {
-    font-size: 20px;
-}
-
-.table-condensed {
-    width: 100%;
-}
-
-.dow {
-    text-transform: capitalize;
-}
-
-.next {
-    background: #c65a4d;
-    color: white;
-    font-size: 20px;
-}
-
-.prev {
-    background: #c65a4d;
-    color: white;
-    font-size: 20px;
-}
-
-.datepicker-switch {
-    font-size: 20px;
-    text-transform: capitalize;
-}
-
-.datepicker table tr td.active.active {
-    background-color: #c65a4d;
-    background-image: none;
-}
-
-datepicker table tr td.active:hover, .datepicker table tr td.active.active:hover, .datepicker table tr td.active:hover:hover {
-    background-color: #c65a4d;
-
-}
-
-.datepicker .next:hover, .prev:hover {
-    color:black;
-}
-
-#dateValide {
-    margin-top:10px;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-
-.progress {
-    margin-left:20px;
-    margin-top: 30px;
-}
-
-.datepicker {
-    direction: ltr;
-    width: 510px;
-}
 
 .badge {
 
@@ -235,7 +156,127 @@ datepicker table tr td.active:hover, .datepicker table tr td.active.active:hover
 }
 
 label {
-    font-size: 20px;
+    font-size: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+}
+
+.infos-block {
+    font-size: 12px;
+    margin: 2px 0 0;
+    float:right;
+    margin-right:100px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.form-horizontal .datepicker-inline {
+    background: white;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    width: 314px;
+    padding-left:25px;
+    padding-top:25px;
+    padding-bottom:25px;
+    border-radius: 3px;
+}
+
+.form-horizontal .datepicker .datepicker-switch {
+    font-size: 17px;
+    cursor: default;
+}
+
+th.next {
+    background: #c65a4d;
+    color:white;
+}
+
+th.next:hover {
+    color:black;
+}
+
+th.prev:hover {
+    color:black;
+}
+
+th.prev {
+    background: #c65a4d;
+    color:white;
+}
+
+.form-horizontal .datepicker [class^="day"] {
+    color: #c65a4d;
+}
+
+.form-horizontal .datepicker .day.disabled {
+    text-decoration: line-through;
+}
+
+td.active.day {
+    background: #c65a4d !important;
+}
+
+.form-horizontal #date_select {
+    background: #c65a4d;
+    border-radius: 4px;
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.form-horizontal #date_select p {
+    color:white;
+    text-align: center;
+    margin-top:3px;
+}
+
+.form-horizontal .legend_date {
+    margin-bottom:10px;
+}
+
+.form-horizontal #date_available {
+    background: white;
+    border-radius: 4px;
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.form-horizontal #date_available p {
+    color:#c65a4d;
+    text-align: center;
+    margin-top:3px;
+}
+
+.form-horizontal #date_disable {
+    background: white;
+    border-radius: 4px;
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.form-horizontal #date_disable p {
+    color:#999;
+    text-align: center;
+    margin-top:3px;
+    text-decoration: line-through;
+}
+
+.form-horizontal #legend {
+    margin-left: 70px;
+    margin-top:30px;
+}
+
+p.vertical-align {
+    margin-top: 8px;
 }

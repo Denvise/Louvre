@@ -247,4 +247,5 @@ class Ticket
     {
         return $this->purchase;
     }
+
 }
