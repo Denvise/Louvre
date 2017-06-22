@@ -156,9 +156,8 @@ hr {
 }
 
 label {
-    font-size: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-size: 11px;
+    font-weight: bold !important;
 }
 
 .infos-block {
@@ -166,6 +165,10 @@ label {
     margin: 2px 0 0;
     float:right;
     margin-right:100px;
+}
+
+.help-block {
+    font-size:11px;
 }
 
 .bold {
@@ -279,4 +282,32 @@ td.active.day {
 
 p.vertical-align {
     margin-top: 8px;
+    margin-left: 40px;
+}
+
+.well {
+    margin-bottom:0px;
+}
+
+i.fa.fa-plus-circle {
+    font-size: 40px;
+    color: #5cb85c;
+}
+
+footer {
+    padding:20px;
+}
+
+.label_block{
+    display:block;
+    float:none;
+    width:auto;
+    padding:0;
+}
+
+@media (min-width: 768px) {
+    .form-inline .form-group {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
 }

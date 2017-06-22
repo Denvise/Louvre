@@ -1,4 +1,5 @@
 {% extends "LouvreTicketingBundle::layout.html.twig" %}
+{% form_theme form "bootstrap_3_horizontal_layout.html.twig" %}
 {% block title %}
     {{ parent() }}
 {% endblock %}
@@ -34,7 +35,7 @@
                             {{ form_widget(form.dateVisit) }}
                         </div>
                         <div class="col-md-6">
-                            <div id="legend">
+                            <div id="legend" class="well">
                                 <div class="legend_date">
                                     <span id="date_select"><p>15</p></span>Date selectionnée
                                 </div>
@@ -53,6 +54,7 @@
             <div class="date_reserve">
                     <h3 class="tabstep">Etape 2 : Type de billet</h3>
                 <div class="blockformstep1 clearfix">
+                    <div class="well clearfix">
                         <div class="form-group">
                             <div class="col-md-4">
                                 {{ form_widget(form.typeTicket) }}
@@ -61,20 +63,23 @@
                                 <p class="infos-block">
                                     <span class="bold"> - Billet journée :</span> valable de 9h à 18h
                                     <br/>
-                                    <span class="bold"> - Billet demi-journée :</span> de 14h à 18h
+                                    <span class="bold"> - Billet demi-journée :</span> valable de 14h à 18h
                                 </p>
                             </div>
                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="date_reserve">
                 <h3 class="tabstep">Etape 3 : Nombre de billet</h3>
-                <div class="blockformstep1 clearfix">
-                    <div class="form-inline" data-prototype="
-				{% filter escape %}
-					{{ include('LouvreTicketingBundle::addticket.html.twig')}}
-				{% endfilter %}">
+                <div class="blockformstep1">
+                    <div id="louvre_ticketingbundle_purchase_tickets" class="form-inline">
+
+                        {{ include('LouvreTicketingBundle:Ticket:addticket.html.twig', { 'form': form.tickets.vars.prototype }) }}
+
+                        <div id="form_refresh">
+                            {{ form_widget(form.tickets) }}
                         </div>
                     </div>
                 </div>
@@ -83,15 +88,16 @@
             <div class="date_reserve">
                 <h3 class="tabstep">Etape 4 : Indiquez votre e-mail</h3>
                 <div class="blockformstep1 clearfix">
-                    <div class="form-group">
-                        <div class="col-md-5">
-                            {{ form_widget(form.email) }}
+                    <div class="well clearfix">
+                        <div class="form-group">
+                            <div class="col-md-5">
+                                {{ form_widget(form.email) }}
+                            </div>
+                            <div class="col-md-7">
+                                <p class="vertical-align">Vos billets vous seront envoyez par mail
+                                    </p>
+                            </div>
                         </div>
-                        <div class="col-md-7">
-                            <p class="vertical-align">Vos billets vous seront envoyez sur cette e-mail
-                                </p>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -99,9 +105,12 @@
             <div class="date_reserve">
                 <h3 class="tabstep">Etape 5 : Finalisez votre commande</h3>
                 <div class="blockformstep1">
-                    <div class="form-group">
-                        {{ form_label(form.typeTicket) }}
-                        {{ form_widget(form.typeTicket) }}
+                    <div class="well clearfix" style="text-align: center">
+                        <div class="form-inline">
+                            {{ form_widget(form.validate) }}
+                            {{ form_rest(form) }}
+                            {{ form_end(form) }}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,6 +182,9 @@
                 language: "fr",
                 daysOfWeekDisabled: '0, 2',
                 startDate: '1',
+            });
+            $('#datepicker').on('changeDate', function(){
+                $('#louvre_ticketingbundle_purchase_dateVisit').val($('#datepicker').datepicker('getFormattedDate'));
             });
         });
     </script>

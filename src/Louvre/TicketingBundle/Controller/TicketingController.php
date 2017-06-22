@@ -18,6 +18,10 @@ class TicketingController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
+            var_dump($purchase);
+            exit();
+            $em->persist($purchase);
+            $em->flush();
         }
 
         return $this->render('LouvreTicketingBundle:Ticket:index.html.twig', [

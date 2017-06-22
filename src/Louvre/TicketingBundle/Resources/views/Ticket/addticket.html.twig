@@ -1,0 +1,27 @@
+<div class="well clearfix">
+    <div class="form-group">
+        {{ form_label(form.buyerLastname) }}
+        {{ form_widget(form.buyerLastname) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.buyerFirstname) }}
+        {{ form_widget(form.buyerFirstname) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.buyerCountry) }}
+        {{ form_widget(form.buyerCountry) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.buyerBirthday) }}
+        {{ form_widget(form.buyerBirthday) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.reducedPrice) }}
+        {{ form_widget(form.reducedPrice) }}
+        <p class="help-block">Un justificatif devra être présenté à l'entrée</p>
+    </div>
+
+    <div class="block_add_ticket">
+       <a href="#" id="add_ticket" class="btn btn-default"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+    </div>
+</div>

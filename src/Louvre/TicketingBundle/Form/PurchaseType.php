@@ -4,6 +4,7 @@ namespace Louvre\TicketingBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -31,6 +32,13 @@ class PurchaseType extends AbstractType
                         'Journée' => 'Journée'
                     ]
                 ])
+
+            ->add('tickets', CollectionType::class, [
+                'entry_type' => TicketType::class,
+                'label_attr' => ['class' => 'hidden'],
+                'allow_add' => true
+                ])
+
             ->add('email', TextType::class, [
                 'label' => 'Email :',
                 'attr' => ['placeholder' => 'exemple@mail.com']
@@ -38,7 +46,7 @@ class PurchaseType extends AbstractType
 
             ->add('validate', SubmitType::class, array(
                 'label' => 'Validez votre commande',
-                'attr' => array('class' => 'btn-success')
+                'attr' => array('class' => 'btn-success btn-block')
             ));
 
 
