@@ -52,7 +52,7 @@
             </div>
 
             <div class="date_reserve">
-                    <h3 class="tabstep">Etape 2 : Type de billet</h3>
+                <h3 class="tabstep">Etape 2 : Type de billet</h3>
                 <div class="blockformstep1 clearfix">
                     <div class="well clearfix">
                         <div class="form-group">
@@ -66,7 +66,7 @@
                                     <span class="bold"> - Billet demi-journée :</span> valable de 14h à 18h
                                 </p>
                             </div>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,17 +74,11 @@
             <div class="date_reserve">
                 <h3 class="tabstep">Etape 3 : Nombre de billet</h3>
                 <div class="blockformstep1">
-                    <div id="louvre_ticketingbundle_purchase_tickets" class="form-inline">
-
-                        {{ include('LouvreTicketingBundle:Ticket:addticket.html.twig', { 'form': form.tickets.vars.prototype }) }}
-
-                        {% if not form.vars.valid %}
-                            <div id="form_refresh">
-                                {{ form_widget(form.tickets) }}
-                            </div>
-                        {% endif %}
-                    {#{{ form_widget(form.tickets) }}#}
-
+                    <div id="louvre_ticketingbundle_purchase_tickets" class="form-inline"
+                         data-prototype="
+				{% filter escape %}
+					{{ include('LouvreTicketingBundle:Ticket:addticket.html.twig', {'form': form.tickets.vars.prototype}) }}
+				{% endfilter %}">
                     </div>
                 </div>
             </div>
@@ -99,7 +93,7 @@
                             </div>
                             <div class="col-md-7">
                                 <p class="vertical-align">Vos billets vous seront envoyez par mail
-                                    </p>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -120,91 +114,77 @@
             </div>
         </div>
         <div class="col-md-5">
-        <div class="informations clearfix">
-            <h3>Aperçu</h3>
-            <hr/>
-            <div class="section_new">
-                <div class="col-xs-4">
-                    Meilleur moment pour visiter
+            <div class="informations clearfix">
+                <h3>Aperçu</h3>
+                <hr/>
+                <div class="section_new">
+                    <div class="col-xs-4">
+                        Meilleur moment pour visiter
+                    </div>
+                </div>
+                <div class="section_informations clearfix">
+                    <div class="col-xs-8">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> Jeudi et vendredi
+                    </div>
+                </div>
+                <hr/>
+                <div class="section_new">
+                    <div class="col-xs-4">
+                        Horaires d'ouverture
+                    </div>
+                </div>
+                <div class="section_informations clearfix">
+                    <div class="col-xs-8">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i> Lundi, jeudi, samedi, dimanche : 9h00 - 18h.<br>
+                        Mercredi, vendredi : 9h00 - 21h45. Fermé le mardi
+                    </div>
+                </div>
+                <hr/>
+                <div class="section_new">
+                    <div class="col-xs-4">
+                        Les points forts
+                    </div>
+                </div>
+                <div class="section_informations clearfix">
+                    <div class="col-xs-8">
+                        <i class="fa fa-flag" aria-hidden="true"></i> Le Louvre, l'un des musées de référence au monde,
+                        abrite des collections d'arts et savoir-faire des civilisations anciennes jusqu'au milieu du 19e siècle<br/>
+                        <br>
+                        <i class="fa fa-flag" aria-hidden="true"></i> La Joconde, la Vénus de Milo ainsi que la Victoire Ailée sont des chefs-d'œuvre de renom mais le
+                        Louvre abrite plus de 35 000 trésors artistiques. Alors prévoyez suffisamment de temps pour votre visite<br/>
+                        <br>
+                        <i class="fa fa-flag" aria-hidden="true"></i> Évitez la file d'attente d'achat des billets. Muni de votre coupon, rendez-vous au kiosque à journaux sur la place voisine du Palais Royal
+                        pour obtenir votre billet papier. Vous n'avez plus qu'à entrer !<br/>
+                        <br>
+
+                    </div>
                 </div>
             </div>
-        <div class="section_informations clearfix">
-            <div class="col-xs-8">
-                <i class="fa fa-info-circle" aria-hidden="true"></i> Jeudi et vendredi
-            </div>
-        </div>
-        <hr/>
-        <div class="section_new">
-            <div class="col-xs-4">
-                Horaires d'ouverture
-            </div>
-        </div>
-        <div class="section_informations clearfix">
-            <div class="col-xs-8">
-                <i class="fa fa-clock-o" aria-hidden="true"></i> Lundi, jeudi, samedi, dimanche : 9h00 - 18h.<br>
-                Mercredi, vendredi : 9h00 - 21h45. Fermé le mardi
-            </div>
-        </div>
-        <hr/>
-        <div class="section_new">
-            <div class="col-xs-4">
-                Les points forts
-            </div>
-        </div>
-        <div class="section_informations clearfix">
-            <div class="col-xs-8">
-                <i class="fa fa-flag" aria-hidden="true"></i> Le Louvre, l'un des musées de référence au monde,
-                abrite des collections d'arts et savoir-faire des civilisations anciennes jusqu'au milieu du 19e siècle<br/>
-                <br>
-                <i class="fa fa-flag" aria-hidden="true"></i> La Joconde, la Vénus de Milo ainsi que la Victoire Ailée sont des chefs-d'œuvre de renom mais le
-                Louvre abrite plus de 35 000 trésors artistiques. Alors prévoyez suffisamment de temps pour votre visite<br/>
-                <br>
-                <i class="fa fa-flag" aria-hidden="true"></i> Évitez la file d'attente d'achat des billets. Muni de votre coupon, rendez-vous au kiosque à journaux sur la place voisine du Palais Royal
-                pour obtenir votre billet papier. Vous n'avez plus qu'à entrer !<br/>
-                <br>
-
-            </div>
         </div>
     </div>
-    </div>
-</div>
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.fr.min.js"></script>
-    <script>
-        $(function() {
-            $.fn.datepicker.dates['fr'] = {
-                days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
-                daysShort: ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"],
-                daysMin: ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"],
-                months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-                monthsShort: ["Jan", "Fev", "Mar", "Avr", "Mai", "Jui", "Juil", "Aou", "Sep", "Oct", "Nov", "Dec"],
-            };
-            $('#datepicker').datepicker({
-                language: "fr",
-                daysOfWeekDisabled: '0, 2',
-                startDate: '1',
-            });
-            $('#datepicker').on('changeDate', function(){
-                $('#louvre_ticketingbundle_purchase_dateVisit').val($('#datepicker').datepicker('getFormattedDate'));
-            });
-        });
-    </script>
+    <script src="{{ asset('js/main.js') }}"></script>
     <script>
         $(function(){
             var $container = $('#louvre_ticketingbundle_purchase_tickets');
             var index = $container.find(':input').length;
 
-            $('#add_ticket').click(function(e){
-                addTicket($container);
+            $('#add_ticket').click(function(){
+                alert('test');
+            });
 
+            $('#add_ticket').click(function(e) {
+                console.log('on arrive ici ?');
+                addTicket($container);
                 e.preventDefault();
                 return false;
             });
 
-            if (index == 0 ) {
+            if (index == 0) {
                 addTicket($container);
             } else {
                 $container.children('div').each(function() {
@@ -213,27 +193,23 @@
 
             }
 
-
             function addTicket($container) {
-                var template = $container.attr('data-prototype')
-                        .replace(/__name__label__/g, 'Ticket ' + (index+1))
-                        .replace(/__name__/g, index);
-
+                var template = $container.attr('data-prototype').replace(/__name__/g, index);
                 var $prototype = $(template);
+
                 addDeleteLink($prototype);
-
                 $container.append($prototype);
-
                 index++;
             }
 
-            function addDeleteLink($prototype){
-                var $deleteLink = $('<a href="#" class="suppr btn btn-danger">Supprimer</a>');
+            function addDeleteLink($prototype) {
+                var $deleteLink = $('<a href="#" class="btn btn-danger">Supprimer ce billet</a>');
 
 
                 $prototype.append($deleteLink);
 
-                $deleteLink.click(function(e){
+                $deleteLink.click(function(e) {
+                    $prototype.remove();
                     e.preventDefault();
                     return false;
                 });
