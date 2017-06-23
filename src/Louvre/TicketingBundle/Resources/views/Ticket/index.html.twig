@@ -78,9 +78,13 @@
 
                         {{ include('LouvreTicketingBundle:Ticket:addticket.html.twig', { 'form': form.tickets.vars.prototype }) }}
 
-                        <div id="form_refresh">
-                            {{ form_widget(form.tickets) }}
-                        </div>
+                        {% if not form.vars.valid %}
+                            <div id="form_refresh">
+                                {{ form_widget(form.tickets) }}
+                            </div>
+                        {% endif %}
+                    {#{{ form_widget(form.tickets) }}#}
+
                     </div>
                 </div>
             </div>
@@ -186,6 +190,54 @@
             $('#datepicker').on('changeDate', function(){
                 $('#louvre_ticketingbundle_purchase_dateVisit').val($('#datepicker').datepicker('getFormattedDate'));
             });
+        });
+    </script>
+    <script>
+        $(function(){
+            var $container = $('#louvre_ticketingbundle_purchase_tickets');
+            var index = $container.find(':input').length;
+
+            $('#add_ticket').click(function(e){
+                addTicket($container);
+
+                e.preventDefault();
+                return false;
+            });
+
+            if (index == 0 ) {
+                addTicket($container);
+            } else {
+                $container.children('div').each(function() {
+                    addDeleteLink($(this));
+                });
+
+            }
+
+
+            function addTicket($container) {
+                var template = $container.attr('data-prototype')
+                        .replace(/__name__label__/g, 'Ticket ' + (index+1))
+                        .replace(/__name__/g, index);
+
+                var $prototype = $(template);
+                addDeleteLink($prototype);
+
+                $container.append($prototype);
+
+                index++;
+            }
+
+            function addDeleteLink($prototype){
+                var $deleteLink = $('<a href="#" class="suppr btn btn-danger">Supprimer</a>');
+
+
+                $prototype.append($deleteLink);
+
+                $deleteLink.click(function(e){
+                    e.preventDefault();
+                    return false;
+                });
+            }
         });
     </script>
 
