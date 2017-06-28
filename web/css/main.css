@@ -311,3 +311,7 @@ footer {
         margin-left: 5px;
     }
 }
+
+a.btn.btn-danger.suppr {
+    margin-top: 10px;
+}

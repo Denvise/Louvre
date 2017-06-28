@@ -21,11 +21,13 @@ class TicketType extends AbstractType
         $builder
             ->add('buyerLastname', TextType::class, [
                 'label' => 'Nom :',
-                'label_attr' => ['class' => 'label_block']
+                'label_attr' => ['class' => 'label_block'],
+                'attr' => [ 'class' => 'form-control' ]
             ])
             ->add('buyerFirstname', TextType::class, [
                  'label' => 'Prénom :',
-                'label_attr' => ['class' => 'label_block']
+                'label_attr' => ['class' => 'label_block'],
+                'attr' => [ 'class' => 'form-control' ]
             ])
             ->add('buyerCountry', CountryType::class, [
               'label' => 'Pays :',
