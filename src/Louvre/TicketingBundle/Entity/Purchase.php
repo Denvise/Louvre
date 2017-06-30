@@ -22,13 +22,12 @@ class Purchase
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="Louvre\TicketingBundle\Entity\Ticket", mappedBy="purchase", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="Louvre\TicketingBundle\Entity\Ticket", mappedBy="purchase", cascade={"all"})
      */
     private $tickets;
 
     /**
      * @var \DateTime
-     *
      * @ORM\Column(name="dateVisit", type="date")
      */
     private $dateVisit;

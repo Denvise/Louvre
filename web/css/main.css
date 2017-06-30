@@ -61,6 +61,12 @@ header {
     margin-left:20px;
 }
 
+.hightitle h2 {
+    color: #606778;
+    margin-top:20px;
+    margin-left:20px;
+}
+
 .images {
     text-align: center
 }
@@ -175,7 +181,7 @@ label {
     font-weight: bold;
 }
 
-.form-horizontal .datepicker-inline {
+.datepicker-inline {
     background: white;
     -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
     -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
@@ -187,7 +193,7 @@ label {
     border-radius: 3px;
 }
 
-.form-horizontal .datepicker .datepicker-switch {
+.datepicker .datepicker-switch {
     font-size: 17px;
     cursor: default;
 }
@@ -210,11 +216,11 @@ th.prev {
     color:white;
 }
 
-.form-horizontal .datepicker [class^="day"] {
+. .datepicker [class^="day"] {
     color: #c65a4d;
 }
 
-.form-horizontal .datepicker .day.disabled {
+.datepicker .day.disabled {
     text-decoration: line-through;
 }
 
@@ -222,7 +228,7 @@ td.active.day {
     background: #c65a4d !important;
 }
 
-.form-horizontal #date_select {
+ #date_select {
     background: #c65a4d;
     border-radius: 4px;
     display: inline-block;
@@ -232,17 +238,17 @@ td.active.day {
     vertical-align: top;
 }
 
-.form-horizontal #date_select p {
+ #date_select p {
     color:white;
     text-align: center;
     margin-top:3px;
 }
 
-.form-horizontal .legend_date {
+.legend_date {
     margin-bottom:10px;
 }
 
-.form-horizontal #date_available {
+#date_available {
     background: white;
     border-radius: 4px;
     display: inline-block;
@@ -252,13 +258,13 @@ td.active.day {
     vertical-align: top;
 }
 
-.form-horizontal #date_available p {
+ #date_available p {
     color:#c65a4d;
     text-align: center;
     margin-top:3px;
 }
 
-.form-horizontal #date_disable {
+#date_disable {
     background: white;
     border-radius: 4px;
     display: inline-block;
@@ -268,14 +274,14 @@ td.active.day {
     vertical-align: top;
 }
 
-.form-horizontal #date_disable p {
+ #date_disable p {
     color:#999;
     text-align: center;
     margin-top:3px;
     text-decoration: line-through;
 }
 
-.form-horizontal #legend {
+ #legend {
     margin-left: 70px;
     margin-top:30px;
 }
@@ -313,5 +319,22 @@ footer {
 }
 
 a.btn.btn-danger.suppr {
-    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn-danger {
+    border-radius: 0px;
+}
+
+.btn-default {
+    border-radius: 0px;
+}
+
+.well {
+    margin-top:5px;
+    border-radius:0px;
 }

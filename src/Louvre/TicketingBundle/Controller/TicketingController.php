@@ -29,4 +29,11 @@ class TicketingController extends Controller
         ]);
 
     }
+
+    public function validationAction(Request $request, Purchase $purchase){
+        return $this->render('LouvreTicketingBundle:Ticket:validation.html.twig', [
+            'purchase' => $purchase,
+            'tickets' => $purchase->getTickets(),
+        ]);
+    }
 }

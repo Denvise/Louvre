@@ -1,3 +1,7 @@
 louvre_ticketing_homepage:
     path:     /
     defaults: { _controller: LouvreTicketingBundle:Ticketing:index }
+
+louvre_ticketing_validation:
+    path:    /validation
+    defaults: { _controller: LouvreTicketingBundle:Ticketing:validation }

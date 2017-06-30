@@ -1,5 +1,4 @@
 {% extends "LouvreTicketingBundle::layout.html.twig" %}
-{% form_theme form "bootstrap_3_horizontal_layout.html.twig" %}
 {% block title %}
     {{ parent() }}
 {% endblock %}
@@ -24,11 +23,11 @@
 {% block body %}
     <div class="container">
         <div class="col-md-7">
+            {{ form_start(form) }}
+            {{ form_errors(form) }}
             <div class="date_reserve">
-                {{ form_start(form) }}
-                {{ form_errors(form) }}
                 <h3 class="tabstep">Etape 1 : Date de votre visite</h3>
-                <div class="blockformstep1">
+                <div class="blockformstep1 clearfix">
                     <div class="form-group">
                         <div class="col-md-6">
                             <div id="datepicker"></div>
@@ -75,14 +74,16 @@
                 <h3 class="tabstep">Etape 3 : Nombre de billet</h3>
                 <div class="blockformstep1">
 
-                    <div id="louvre_ticketingbundle">
-                        <div class="well">
-                            <div class="form-group">
-                                {{ form_widget(form.tickets, {'attr': {'class': ''}}) }}
-                                <a href="#" id="add_ticket" class="btn btn-default">Ajouter un billet</a>
-                            </div>
+                    <div class="core">
+                        <div id="louvre_ticketingbundle_purchase_tickets" class="form-inline"
+                             data-prototype="
+                        {% filter escape %}
+                             {{ include('LouvreTicketingBundle:Ticket:addticket.html.twig', {'form': form.tickets.vars.prototype }) }}
+                            {% endfilter %}">
                         </div>
                     </div>
+                    <a href="#" id="add_ticket" class="btn btn-default">Ajouter un billet</a>
+
                 </div>
             </div>
 
@@ -109,13 +110,15 @@
                     <div class="well clearfix" style="text-align: center">
                         <div class="form-inline">
                             {{ form_widget(form.validate) }}
-                            {{ form_rest(form) }}
-                            {{ form_end(form) }}
+                            {{ form_errors(form.dateVisit) }}
                         </div>
                     </div>
                 </div>
             </div>
+            {{ form_rest(form) }}
+            {{ form_end(form) }}
         </div>
+
         <div class="col-md-5">
             <div class="informations clearfix">
                 <h3>Aperçu</h3>
@@ -171,71 +174,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.fr.min.js"></script>
     <script src="{{ asset('js/main.js') }}"></script>
-
-
-    {# Voici le script en question : #}
     <script type="text/javascript">
         $(document).ready(function() {
             // On récupère la balise <div> en question qui contient l'attribut « data-prototype » qui nous intéresse.
-            var $container = $('div#louvre_ticketingbundle_purchase_tickets');
-
-            // On définit un compteur unique pour nommer les champs qu'on va ajouter dynamiquement
+            var $container = $('#louvre_ticketingbundle_purchase_tickets');
             var index = $container.find(':input').length;
 
-            // On ajoute un nouveau champ à chaque clic sur le lien d'ajout.
             $('#add_ticket').click(function(e) {
                 addCategory($container);
-
-                e.preventDefault(); // évite qu'un # apparaisse dans l'URL
+                e.preventDefault();
                 return false;
             });
 
-            // On ajoute un premier champ automatiquement s'il n'en existe pas déjà un (cas d'une nouvelle annonce par exemple).
             if (index == 0) {
                 addCategory($container);
             } else {
-                // S'il existe déjà des catégories, on ajoute un lien de suppression pour chacune d'entre elles
                 $container.children('div').each(function() {
                     addDeleteLink($(this));
                 });
+
             }
 
-            // La fonction qui ajoute un formulaire CategoryType
             function addCategory($container) {
-                // Dans le contenu de l'attribut « data-prototype », on remplace :
-                // - le texte "__name__label__" qu'il contient par le label du champ
-                // - le texte "__name__" qu'il contient par le numéro du champ
-                var template = $container.attr('data-prototype')
-                    .replace(/__name__label__/g, 'Ticket n°' + (index+1))
-                    .replace(/__name__/g,        index)
-                ;
-
-                // On crée un objet jquery qui contient ce template
+                var template = $container.attr('data-prototype').replace(/__name__/g, index);
                 var $prototype = $(template);
-
-                // On ajoute au prototype un lien pour pouvoir supprimer la catégorie
                 addDeleteLink($prototype);
-
-                // On ajoute le prototype modifié à la fin de la balise <div>
                 $container.append($prototype);
-
-                // Enfin, on incrémente le compteur pour que le prochain ajout se fasse avec un autre numéro
                 index++;
             }
 
-            // La fonction qui ajoute un lien de suppression d'une catégorie
             function addDeleteLink($prototype) {
-                // Création du lien
-                var $deleteLink = $('<a href="#" class="btn btn-danger">Supprimer</a>');
 
-                // Ajout du lien
+                var $deleteLink = $('<a href="#" class="btn btn-danger">Supprimer ce billet</a>');
                 $prototype.append($deleteLink);
-
-                // Ajout du listener sur le clic du lien pour effectivement supprimer la catégorie
                 $deleteLink.click(function(e) {
                     $prototype.remove();
-
-                    e.preventDefault(); // évite qu'un # apparaisse dans l'URL
+                    e.preventDefault();
                     return false;
                 });
             }
