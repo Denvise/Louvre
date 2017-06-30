@@ -3,5 +3,7 @@ louvre_ticketing_homepage:
     defaults: { _controller: LouvreTicketingBundle:Ticketing:index }
 
 louvre_ticketing_validation:
-    path:    /validation
+    path:    /validation/{id}
     defaults: { _controller: LouvreTicketingBundle:Ticketing:validation }
+    requirements:
+        id:  \d+

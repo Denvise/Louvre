@@ -35,8 +35,20 @@
                         </tr>
                     </thead>
                     <tbody>
+                    {% for ticket in tickets %}
                     <tr>
-                        <th>Billet</th>
+                        <td>
+                            {% if purchase.typeTicket == "journee" %}
+                                <p>
+                                    Billet journée
+                                    {% else %}
+                                 Billet demi-journée
+                                    {% endif %}
+                                </p>
+                            <p>
+                                Date de visite : {{ purchase.dateVisit|date('d/m/y') }}
+                            </p>
+                        </td>
                     </tr>
                     </tbody>
 

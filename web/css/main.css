@@ -216,7 +216,7 @@ th.prev {
     color:white;
 }
 
-. .datepicker [class^="day"] {
+.datepicker [class^="day"] {
     color: #c65a4d;
 }
 

@@ -22,7 +22,7 @@ class Purchase
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="Louvre\TicketingBundle\Entity\Ticket", mappedBy="purchase", cascade={"all"})
+     * @ORM\OneToMany(targetEntity="Louvre\TicketingBundle\Entity\Ticket", mappedBy="purchase", cascade={"persist"})
      */
     private $tickets;
 
@@ -195,7 +195,7 @@ class Purchase
      */
     public function __construct()
     {
-        $this->tickets = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->datePurchase = new \DateTime();
     }
 
     /**
