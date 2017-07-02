@@ -76,6 +76,23 @@
 
         <div class="date_reserve">
             <h3 class="tabstep">Etape 2 : Réglez votre commande</h3>
+            <div id="paiement_selection" class="well center">
+                <form action="{{ path('louvre_ticketing_validation', {'id': purchase.id}) }}" method="post">
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                            data-key="pk_test_6SImzxSFZbb5GhPaYf7wYwZM"
+                            data-image="{{ asset('images/logo-louvre.jpg') }}"
+                            data-name="Musée du Louvre"
+                            data-description="Paiement de votre commande"
+                            data-email="{{ purchase.email }}"
+                            data-amount="{{ totalPrice * 100 }}"
+                            data-locale="fr"
+                            data-currency="eur"
+                            data-allow-remember-me="false"
+                            data-label="Payer avec votre carte bancaire">
+                    </script><br/>
+                </form>
+                <img src="{{ asset('images/hostiso-stripe.png') }}" alt="Logo moyens de paiement disponibles" width="150px" style="margin-bottom: 20px;"/>
+            </div>
         </div>
     </div>
 

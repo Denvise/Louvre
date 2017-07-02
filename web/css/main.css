@@ -369,3 +369,12 @@ td {
 tfoot {
     background: #f9f9f9;
 }
+
+div#paiement_selection {
+    text-align: center;
+}
+
+.stripe-button-el {
+    margin-top:10px;
+    margin-bottom:10px;
+}
