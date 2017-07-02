@@ -22,13 +22,12 @@ class Purchase
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="Louvre\TicketingBundle\Entity\Ticket", mappedBy="purchase", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="Louvre\TicketingBundle\Entity\Ticket", mappedBy="purchase", cascade={"all"})
      */
     private $tickets;
 
     /**
      * @var \DateTime
-     *
      * @ORM\Column(name="dateVisit", type="date")
      */
     private $dateVisit;
@@ -61,7 +60,7 @@ class Purchase
      */
     private $datePurchase;
 
-
+    private $totalPrice;
     /**
      * Get id
      *
@@ -191,5 +190,61 @@ class Purchase
     {
         return $this->datePurchase;
     }
-}
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->datePurchase = new \DateTime();
+    }
 
+    /**
+     * Add ticket
+     *
+     * @param \Louvre\TicketingBundle\Entity\Ticket $ticket
+     *
+     * @return Purchase
+     */
+    public function addTicket(\Louvre\TicketingBundle\Entity\Ticket $ticket)
+    {
+        $this->tickets[] = $ticket;
+
+        return $this;
+    }
+
+    /**
+     * Remove ticket
+     *
+     * @param \Louvre\TicketingBundle\Entity\Ticket $ticket
+     */
+    public function removeTicket(\Louvre\TicketingBundle\Entity\Ticket $ticket)
+    {
+        $this->tickets->removeElement($ticket);
+    }
+
+    /**
+     * Get tickets
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getTickets()
+    {
+        return $this->tickets;
+    }
+
+    public function setTotalPrice($totalPrice)
+    {
+        $this->totalPrice = $totalPrice;
+        return $this;
+    }
+
+    public function getTotalPrice(){
+        $tickets = $this->getTickets();
+        $totalPrice = 0;
+        foreach ($tickets as $ticket){
+            $totalPrice += $ticket->getTicketPrice();
+        }
+        $this->setTotalPrice($totalPrice);
+        return $this->totalPrice;
+    }
+}

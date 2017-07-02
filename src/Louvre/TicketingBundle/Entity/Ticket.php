@@ -69,7 +69,6 @@ class Ticket
      */
     private $ticketPrice;
 
-
     /**
      * Get id
      *

@@ -36,6 +36,7 @@ class TicketingController extends Controller
         return $this->render('LouvreTicketingBundle:Ticket:validation.html.twig', [
             'purchase' => $purchase,
             'tickets' => $purchase->getTickets(),
+            'totalPrice' => $purchase->getTotalPrice(),
         ]);
     }
 }

@@ -338,3 +338,34 @@ li {
     margin-top:5px;
     border-radius:0px;
 }
+
+thead th {
+    border-right: 1px solid white;
+}
+
+thead {
+    background: #34373e;
+    color: #fff;
+}
+
+tbody {
+    background: white;
+}
+
+td {
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+
+.billet {
+    color:#c65a4d;
+}
+
+.total_price {
+    color:#c65a4d;
+    font-size:18px;
+}
+
+tfoot {
+    background: #f9f9f9;
+}

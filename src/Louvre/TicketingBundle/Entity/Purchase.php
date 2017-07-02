@@ -22,7 +22,7 @@ class Purchase
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="Louvre\TicketingBundle\Entity\Ticket", mappedBy="purchase", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="Louvre\TicketingBundle\Entity\Ticket", mappedBy="purchase", cascade={"all"})
      */
     private $tickets;
 
@@ -59,6 +59,8 @@ class Purchase
      * @ORM\Column(name="datePurchase", type="datetime")
      */
     private $datePurchase;
+
+    private $totalPrice;
 
 
     /**
@@ -231,4 +233,28 @@ class Purchase
     {
         return $this->tickets;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getTotalPrice()
+    {
+        $tickets = $this->getTickets();
+        $totalPrice = 0;
+        foreach ($tickets as $ticket) {
+            $totalPrice += $ticket->getTicketPrice();
+        }
+        $this->setTotalPrice($totalPrice);
+        return $this->totalPrice;
+    }
+
+    /**
+     * @param mixed $totalPrice
+     */
+    public function setTotalPrice($totalPrice)
+    {
+        $this->totalPrice = $totalPrice;
+    }
+
+
 }
