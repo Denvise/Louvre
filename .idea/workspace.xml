@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ccdfd01-b2ac-4eae-9bd1-c78ee4e5bcaf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/payment.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/validation.html.twig" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/validation.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="378" column="17" lean-forward="false" selection-start-line="378" selection-start-column="17" selection-end-line="378" selection-end-column="17" />
+            <state relative-caret-position="476">
+              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -69,6 +66,7 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/validation.html.twig" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -573,18 +571,17 @@
       <workItem from="1498810187978" duration="3789000" />
       <workItem from="1498985558697" duration="148000" />
       <workItem from="1498986934030" duration="611000" />
-      <workItem from="1499006860428" duration="5578000" />
+      <workItem from="1499006860428" duration="6074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85092000" />
+    <option name="totallyTimeSpent" value="85588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="33" width="1922" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18385416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18385416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1244,6 +1241,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="378" column="17" lean-forward="false" selection-start-line="378" selection-start-column="17" selection-end-line="378" selection-end-column="17" />
+          <folding>
+            <marker date="1499015152848" expanded="true" signature="9:160" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="169:479" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="495:627" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="649:720" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="733:860" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="876:1005" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="1021:1130" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="1146:1212" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="1228:1294" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="1304:1330" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="1343:1395" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="1405:1455" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="1468:1770" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="1781:1858" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="1874:2269" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2288:2313" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2318:2359" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2377:2453" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2468:2513" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2536:2560" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2571:2695" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2705:2757" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2775:2797" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2810:2832" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2840:2898" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="2913:2999" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3013:3036" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3044:3070" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3091:3377" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3410:3455" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3465:3510" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3526:3546" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3562:3582" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3592:3637" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3666:3689" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3717:3755" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3771:3810" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="3826:3989" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4007:4071" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4086:4113" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4131:4292" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4313:4379" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4395:4556" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4575:4673" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4684:4731" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4750:4797" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4805:4831" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4853:4897" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4906:4927" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="4941:5010" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5038:5130" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5069:5128" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5155:5183" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5188:5218" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5232:5259" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5274:5301" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5309:5355" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5366:5404" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5412:5457" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5465:5491" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5496:5566" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5576:5598" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5613:5655" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5663:5691" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5716:5743" ph="{...}" />
+            <marker date="1499015152848" expanded="true" signature="5763:5811" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding />
         </state>
       </provider>
