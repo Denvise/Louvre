@@ -25,58 +25,95 @@
     <div class="col-md-7">
         <div class="date_reserve">
             <h3 class="tabstep">Etape 1 : Vérifiez votre commande</h3>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Désignation</th>
-                            <th>Détails du billet</th>
-                            <th>Prix du billet</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    {% for ticket in tickets %}
-                    <tr>
-                        <td>
-                            {% if purchase.typeTicket == "journee" %}
-                                <p>
 
-                                    <b><span class="billet"> .: Billet journée :.</span></b>
-                                    {% else %}
-                                        <b><span class="billet"> .: Billet demi-journée :.</span></b>
-                                    {% endif %}
-                                </p>
-                            <p>
-                                <span class="bold">Date de visite :</span> {{ purchase.dateVisit|date('d/m/y') }}
-                            </p>
-                        </td>
-                        <td class="tickets_detail">
-                            {{ ticket.buyerLastname|upper }} {{ ticket.buyerFirstname|capitalize }}
-                            <span class="bold">
-							{% if ticket.ticketPrice == 0.00 %}(Tarif enfant, moins de 4 ans){% endif %}
-                                {% if ticket.ticketPrice == 8.00 %}(Tarif enfant, 4 à 12 ans){% endif %}
-                                {% if ticket.ticketPrice == 16.00 %}(Tarif normal){% endif %}
-                                {% if ticket.ticketPrice == 12.00 %}(Tarif senior, à partir de 60 ans){% endif %}
-                                {% if ticket.ticketPrice == 10.00 %}(Tarif réduit){% endif %}
-						</span>
-                        </td>
-                        <td class="ticket_price text-right bold">
-                            {{ ticket.ticketPrice|number_format(2) }} €
-                        </td>
-                    </tr>
-                    {% endfor %}
-                    </tbody>
-                    <tfoot>
-                        <th colspan="3" class="total_price text-right bold">Montant total de la commande : {{ totalPrice|number_format(2) }} €</th>
-                    </tfoot>
-                </table>
+                {% for ticket in tickets %}
+            <div id="billet" class="clearfix">
+                    <p style="text-align: center">
+                        {% if purchase.typeTicket == "journee" %}
+                            <b><span class="billet"> .: Billet journée :.</span></b>
+                        {% else %}
+                            <b><span class="billet"> .: Billet demi-journée :.</span></b>
+                        {% endif %}<br/>
+                        <span class="bold">Date de visite :</span> {{ purchase.dateVisit|date('d/m/y') }}
+                    </p>
+                    <br/>
+                    <div class="col-md-6">
+                        {{ ticket.buyerLastname|upper }} {{ ticket.buyerFirstname|capitalize }}
+                        <span class="bold">
+                        {% if ticket.ticketPrice == 0.00 %}(Tarif enfant, moins de 4 ans){% endif %}
+                            {% if ticket.ticketPrice == 8.00 %}(Tarif enfant, 4 à 12 ans){% endif %}
+                            {% if ticket.ticketPrice == 16.00 %}(Tarif normal){% endif %}
+                            {% if ticket.ticketPrice == 12.00 %}(Tarif senior, à partir de 60 ans){% endif %}
+                            {% if ticket.ticketPrice == 10.00 %}(Tarif réduit){% endif %}
+                        </span><br/>
 
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <p class="ticket_price text-right">
+                            Prix unitaire : <b>{{ ticket.ticketPrice|number_format(2) }} €</b>
+                        </p>
+                    </div>
             </div>
+                {% endfor %}
+            <p class="total_price text-right bold">Montant total de la commande : {{ totalPrice|number_format(2) }} €</p>
+
         </div>
+
+            {#<div class="table-responsive">#}
+                {#<table class="table">#}
+                    {#<thead>#}
+                        {#<tr>#}
+                            {#<th>Désignation</th>#}
+                            {#<th>Détails du billet</th>#}
+                            {#<th>Prix du billet</th>#}
+                        {#</tr>#}
+                    {#</thead>#}
+                    {#<tbody>#}
+                    {#{% for ticket in tickets %}#}
+                    {#<tr>#}
+                        {#<td>#}
+                            {#{% if purchase.typeTicket == "journee" %}#}
+                                {#<p>#}
+
+                                    {#<b><span class="billet"> .: Billet journée :.</span></b>#}
+                                    {#{% else %}#}
+                                        {#<b><span class="billet"> .: Billet demi-journée :.</span></b>#}
+                                    {#{% endif %}#}
+                                {#</p>#}
+                            {#<p>#}
+                                {#<span class="bold">Date de visite :</span> {{ purchase.dateVisit|date('d/m/y') }}#}
+                            {#</p>#}
+                        {#</td>#}
+                        {#<td class="tickets_detail">#}
+                            {#{{ ticket.buyerLastname|upper }} {{ ticket.buyerFirstname|capitalize }}#}
+                            {#<span class="bold">#}
+							{#{% if ticket.ticketPrice == 0.00 %}(Tarif enfant, moins de 4 ans){% endif %}#}
+                                {#{% if ticket.ticketPrice == 8.00 %}(Tarif enfant, 4 à 12 ans){% endif %}#}
+                                {#{% if ticket.ticketPrice == 16.00 %}(Tarif normal){% endif %}#}
+                                {#{% if ticket.ticketPrice == 12.00 %}(Tarif senior, à partir de 60 ans){% endif %}#}
+                                {#{% if ticket.ticketPrice == 10.00 %}(Tarif réduit){% endif %}#}
+						{#</span>#}
+                        {#</td>#}
+                        {#<td class="ticket_price text-right bold">#}
+                            {#{{ ticket.ticketPrice|number_format(2) }} €#}
+                        {#</td>#}
+                    {#</tr>#}
+                    {#{% endfor %}#}
+                    {#</tbody>#}
+                    {#<tfoot>#}
+                        {#<th colspan="3" class="total_price text-right bold">Montant total de la commande : {{ totalPrice|number_format(2) }} €</th>#}
+                    {#</tfoot>#}
+                {#</table>#}
 
         <div class="date_reserve">
             <h3 class="tabstep">Etape 2 : Réglez votre commande</h3>
-            <div id="paiement_selection" class="well center">
+            {% for message in app.session.flashbag.get('payment_error') %}
+                <div id="paiement_error" class="alert alert-danger">
+                    <p class="bold">Une erreur est survenue lors de votre paiement.</p>
+                    <p>{{ message }}</p>
+                </div>
+            {% endfor %}
+            <div id="paiement_selection" class="well">
                 <form action="{{ path('louvre_ticketing_validation', {'id': purchase.id}) }}" method="post">
                     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                             data-key="pk_test_6SImzxSFZbb5GhPaYf7wYwZM"

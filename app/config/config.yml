@@ -40,6 +40,8 @@ twig:
     strict_variables: '%kernel.debug%'
     form_themes:
             - "bootstrap_3_layout.html.twig"
+    globals:
+        stripe_api_key_pk: "%stripe_api_key_pk%" # The Stripe API key can be added as a symfony parameter
 
 # Doctrine Configuration
 doctrine:

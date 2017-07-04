@@ -359,10 +359,11 @@ td {
 
 .billet {
     color:#c65a4d;
+    font-size: 18px;
 }
 
 .total_price {
-    color:#c65a4d;
+    color:#3e3b40;
     font-size:18px;
 }
 
@@ -377,4 +378,11 @@ div#paiement_selection {
 .stripe-button-el {
     margin-top:10px;
     margin-bottom:10px;
+}
+
+div#billet {
+    background: url('../images/artisanat-brun.jpg');
+    padding: 15px;
+    border-right: 25px solid #e0b68b;
+    margin-bottom: 15px;
 }
