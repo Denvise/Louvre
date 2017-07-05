@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ccdfd01-b2ac-4eae-9bd1-c78ee4e5bcaf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/Configuration.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/LouvreExtentension.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/confirmation.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Projet4.iml" afterPath="$PROJECT_DIR$/.idea/Projet4.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Controller/TicketingController.php" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Controller/TicketingController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/validation.html.twig" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/validation.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/Configuration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/LouvreExtentension.php" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/LouvreExtentension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/confirmation.html.twig" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/confirmation.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TicketingController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/Controller/TicketingController.php">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="845">
+              <caret line="389" column="0" lean-forward="true" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,17 +66,18 @@
         <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/Entity/Purchase.php" />
         <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/Entity/Ticket.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/web/css/main.css" />
         <option value="$PROJECT_DIR$/src/DependencyInjection/Configuration.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/confirmation.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/validation.html.twig" />
-        <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/Configuration.php" />
         <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/FloschStripeExtension.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/Configuration.php" />
+        <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/LouvreExtentension.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/Controller/TicketingController.php" />
+        <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/confirmation.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/main.css" />
       </list>
     </option>
   </component>
@@ -114,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -447,12 +444,11 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../billeterie" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -576,17 +572,18 @@
       <workItem from="1498986934030" duration="611000" />
       <workItem from="1499006860428" duration="6118000" />
       <workItem from="1499074026842" duration="9166000" />
+      <workItem from="1499245430225" duration="2944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94798000" />
+    <option name="totallyTimeSpent" value="97742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="33" width="1922" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26458332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -616,13 +613,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/addticket.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -772,18 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="20" column="51" lean-forward="false" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding>
-            <marker date="1498812378270" expanded="true" signature="111:1242" ph="..." />
-            <marker date="1498812378270" expanded="true" signature="162:987" ph="..." />
-            <marker date="1498812378270" expanded="true" signature="247:433" ph="..." />
-            <marker date="1498812378270" expanded="true" signature="466:536" ph="..." />
-            <marker date="1498812378270" expanded="true" signature="586:656" ph="..." />
-            <marker date="1498812378270" expanded="true" signature="707:778" ph="..." />
-            <marker date="1498812378270" expanded="true" signature="808:879" ph="..." />
-            <marker date="1498812378270" expanded="true" signature="909:980" ph="..." />
-            <marker date="1498812378270" expanded="true" signature="1039:1239" ph="..." />
-            <marker date="1498812378270" expanded="true" signature="1149:1185" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,48 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3192">
           <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-          <folding>
-            <marker date="1499012146581" expanded="true" signature="86:215" ph=" Ticket ..." />
-            <marker date="1499012146581" expanded="true" signature="230:4408" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="240:374" ph=" @var int ..." />
-            <marker date="1499012146581" expanded="true" signature="402:546" ph=" @ORM\ManyToOne(targetEntity=&quot;Louvre\TicketingBundle\Entity\Purchase&quot;, inversedBy=&quot;tickets&quot;) ..." />
-            <marker date="1499012146581" expanded="true" signature="580:680" ph=" @var string ..." />
-            <marker date="1499012146581" expanded="true" signature="719:820" ph=" @var string ..." />
-            <marker date="1499012146581" expanded="true" signature="860:959" ph=" @var string ..." />
-            <marker date="1499012146581" expanded="true" signature="997:1086" ph=" @var \DateTime ..." />
-            <marker date="1499012146581" expanded="true" signature="1125:1211" ph=" @var bool ..." />
-            <marker date="1499012146581" expanded="true" signature="1249:1359" ph=" @var string ..." />
-            <marker date="1499012146581" expanded="true" signature="1396:1442" ph=" Get id ..." />
-            <marker date="1499012146581" expanded="true" signature="1472:1510" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="1519:1622" ph=" Set buyerLastname ..." />
-            <marker date="1499012146581" expanded="true" signature="1677:1759" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="1768:1828" ph=" Get buyerLastname ..." />
-            <marker date="1499012146581" expanded="true" signature="1869:1918" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="1927:2032" ph=" Set buyerFirstname ..." />
-            <marker date="1499012146581" expanded="true" signature="2089:2173" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="2182:2243" ph=" Get buyerFirstname ..." />
-            <marker date="1499012146581" expanded="true" signature="2285:2335" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="2344:2445" ph=" Set buyerCountry ..." />
-            <marker date="1499012146581" expanded="true" signature="2498:2578" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="2587:2646" ph=" Get buyerCountry ..." />
-            <marker date="1499012146581" expanded="true" signature="2686:2734" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="2743:2849" ph=" Set buyerBirthday ..." />
-            <marker date="1499012146581" expanded="true" signature="2904:2986" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="2995:3058" ph=" Get buyerBirthday ..." />
-            <marker date="1499012146581" expanded="true" signature="3099:3148" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="3157:3259" ph=" Set reducedPrice ..." />
-            <marker date="1499012146581" expanded="true" signature="3312:3392" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="3401:3458" ph=" Get reducedPrice ..." />
-            <marker date="1499012146581" expanded="true" signature="3498:3546" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="3555:3654" ph=" Set ticketPrice ..." />
-            <marker date="1499012146581" expanded="true" signature="3705:3783" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="3792:3850" ph=" Get ticketPrice ..." />
-            <marker date="1499012146581" expanded="true" signature="3889:3936" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="3945:4071" ph=" Set purchase ..." />
-            <marker date="1499012146581" expanded="true" signature="4156:4228" ph="{...}" />
-            <marker date="1499012146581" expanded="true" signature="4237:4325" ph=" Get purchase ..." />
-            <marker date="1499012146581" expanded="true" signature="4361:4405" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,83 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="365" column="17" lean-forward="false" selection-start-line="365" selection-start-column="17" selection-end-line="365" selection-end-column="17" />
-          <folding>
-            <marker date="1499076029604" expanded="true" signature="9:160" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="169:479" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="495:627" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="649:720" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="733:860" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="876:1005" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="1021:1130" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="1146:1212" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="1228:1294" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="1304:1330" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="1343:1395" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="1405:1455" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="1468:1770" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="1781:1858" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="1874:2269" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2288:2313" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2318:2359" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2377:2453" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2468:2513" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2536:2560" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2571:2695" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2705:2757" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2775:2797" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2810:2832" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2840:2898" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="2913:2999" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3013:3036" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3044:3070" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3091:3377" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3410:3455" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3465:3510" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3526:3546" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3562:3582" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3592:3637" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3666:3689" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3717:3755" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3771:3810" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="3826:3989" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4007:4071" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4086:4113" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4131:4292" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4313:4379" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4395:4556" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4575:4673" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4684:4731" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4750:4797" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4805:4831" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4853:4897" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4906:4927" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="4941:5010" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5038:5130" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5069:5128" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5155:5183" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5188:5218" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5232:5259" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5274:5301" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5309:5355" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5366:5404" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5412:5457" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5465:5491" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5496:5566" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5576:5619" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5634:5676" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5684:5712" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5737:5764" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5784:5832" ph="{...}" />
-            <marker date="1499076029604" expanded="true" signature="5845:5983" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,7 +860,6 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="-924">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1011,14 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-415">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1473963419000" expanded="true" signature="29:315" ph=" Class Token ..." />
-            <marker date="1473963419000" expanded="true" signature="349:861" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="359:489" ph=" @param array|string $id The ID of the token to retrieve, or an options ..." />
-            <marker date="1473963419000" expanded="true" signature="546:602" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="611:735" ph=" @param array|null $params ..." />
-            <marker date="1473963419000" expanded="true" signature="801:859" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,15 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1473963419000" expanded="true" signature="64:501" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="74:140" ph=" @return string The endpoint URL for the given class. ..." />
-            <marker date="1473963419000" expanded="true" signature="180:224" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="233:254" ph=" @param array|string $id The ID of the 3DS auth to retrieve, or an ..." />
-            <marker date="1473963419000" expanded="true" signature="497:556" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="254:375" ph=" @param array|null $params ..." />
-            <marker date="1473963419000" expanded="true" signature="441:499" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,24 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1473963419000" expanded="true" signature="29:68" ph=" Class Order ..." />
-            <marker date="1473963419000" expanded="true" signature="102:2035" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="112:242" ph=" @param array|string $id The ID of the order to retrieve, or an options ..." />
-            <marker date="1473963419000" expanded="true" signature="299:355" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="364:488" ph=" @param array|null $params ..." />
-            <marker date="1473963419000" expanded="true" signature="554:612" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="621:804" ph=" @param string $id The ID of the order to update. ..." />
-            <marker date="1473963419000" expanded="true" signature="878:944" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="953:1042" ph=" @param array|string|null $opts ..." />
-            <marker date="1473963419000" expanded="true" signature="1083:1131" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="1140:1260" ph=" @param array|null $params ..." />
-            <marker date="1473963419000" expanded="true" signature="1323:1378" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="1387:1430" ph=" @return Order The paid order. ..." />
-            <marker date="1473963419000" expanded="true" signature="1486:1692" ph="{...}" />
-            <marker date="1473963419000" expanded="true" signature="1701:1760" ph=" @return OrderReturn The newly created return. ..." />
-            <marker date="1473963419000" expanded="true" signature="1824:2033" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1068,50 +891,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DependencyInjection/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DependencyInjection/Configuration.php" />
     <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1496722249000" expanded="true" signature="0:39" ph="imports: &lt;1 item&gt;" />
-            <marker date="1496722249000" expanded="true" signature="27:37" ph="config.yml" />
-            <marker date="1496722249000" expanded="true" signature="41:206" ph="framework: &lt;2 keys&gt;" />
-            <marker date="1496722249000" expanded="true" signature="56:165" ph="router: &lt;2 keys&gt;" />
-            <marker date="1496722249000" expanded="true" signature="82:131" ph="%kernel.p…ng_dev.yml" />
-            <marker date="1496722249000" expanded="true" signature="161:165" ph="true" />
-            <marker date="1496722249000" expanded="true" signature="170:206" ph="profiler: {1 key}" />
-            <marker date="1496722249000" expanded="true" signature="199:204" ph="false" />
-            <marker date="1496722249000" expanded="true" signature="208:270" ph="web_profiler: &lt;2 keys&gt;" />
-            <marker date="1496722249000" expanded="true" signature="235:239" ph="true" />
-            <marker date="1496722249000" expanded="true" signature="265:270" ph="false" />
-            <marker date="1496722249000" expanded="true" signature="272:830" ph="monolog: &lt;1 key&gt;" />
-            <marker date="1496722249000" expanded="true" signature="285:830" ph="handlers: &lt;3 keys&gt;" />
-            <marker date="1496722249000" expanded="true" signature="303:454" ph="main: &lt;4 keys&gt;" />
-            <marker date="1496722249000" expanded="true" signature="327:333" ph="stream" />
-            <marker date="1496722249000" expanded="true" signature="352:396" ph="%kernel.l…nment%.log" />
-            <marker date="1496722249000" expanded="true" signature="416:421" ph="debug" />
-            <marker date="1496722249000" expanded="true" signature="434:454" ph="channels: [1 item]" />
-            <marker date="1496722249000" expanded="true" signature="445:453" ph="!event" />
-            <marker date="1496722249000" expanded="true" signature="463:597" ph="console: &lt;3 keys&gt;" />
-            <marker date="1496722249000" expanded="true" signature="490:497" ph="console" />
-            <marker date="1496722249000" expanded="true" signature="534:539" ph="false" />
-            <marker date="1496722249000" expanded="true" signature="552:597" ph="channels: [3 items]" />
-            <marker date="1496722249000" expanded="true" signature="563:571" ph="!event" />
-            <marker date="1496722249000" expanded="true" signature="573:584" ph="!doctrine" />
-            <marker date="1496722249000" expanded="true" signature="586:596" ph="!console" />
-            <marker date="1496722249000" expanded="true" signature="715:830" ph="server_log: &lt;3 keys&gt;" />
-            <marker date="1496722249000" expanded="true" signature="745:755" ph="server_log" />
-            <marker date="1496722249000" expanded="true" signature="792:797" ph="false" />
-            <marker date="1496722249000" expanded="true" signature="816:830" ph="127.0.0.1:9911" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,23 +903,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <marker date="1499093020924" expanded="true" signature="0:2320" ph="{&quot;name&quot;: &quot;akamai/projet4&quot;...}" />
-            <marker date="1499093020924" expanded="true" signature="101:257" ph="{...}" />
-            <marker date="1499093020924" expanded="true" signature="120:154" ph="{&quot;&quot;: &quot;src/&quot;...}" />
-            <marker date="1499093020924" expanded="true" signature="176:251" ph="[...]" />
-            <marker date="1499093020924" expanded="true" signature="279:475" ph="{...}" />
-            <marker date="1499093020924" expanded="true" signature="298:341" ph="{&quot;Tests\&quot;: &quot;tests/&quot;...}" />
-            <marker date="1499093020924" expanded="true" signature="360:469" ph="[...]" />
-            <marker date="1499093020924" expanded="true" signature="492:1041" ph="{&quot;php&quot;: &quot;&gt;=5.5.9&quot;...}" />
-            <marker date="1499093020924" expanded="true" signature="1062:1153" ph="{&quot;sensio/generator-bundle&quot;: &quot;^3.0&quot;...}" />
-            <marker date="1499093020924" expanded="true" signature="1170:1901" ph="{...}" />
-            <marker date="1499093020924" expanded="true" signature="1199:1752" ph="[...]" />
-            <marker date="1499093020924" expanded="true" signature="1782:1824" ph="[...]" />
-            <marker date="1499093020924" expanded="true" signature="1853:1895" ph="[...]" />
-            <marker date="1499093020924" expanded="true" signature="1917:1954" ph="{&quot;sort-packages&quot;: true...}" />
-            <marker date="1499093020924" expanded="true" signature="1969:2318" ph="{&quot;symfony-app-dir&quot;: &quot;app&quot;...}" />
-            <marker date="1499093020924" expanded="true" signature="2223:2282" ph="{&quot;file&quot;: &quot;app/config/parameters.yml&quot;...}" />
+            <marker date="1499094657062" expanded="true" signature="11:100" ph="..." />
+            <marker date="1499094657062" expanded="true" signature="132:1837" ph="{...}" />
+            <marker date="1499094657062" expanded="true" signature="172:1375" ph="{...}" />
+            <marker date="1499094657062" expanded="true" signature="199:775" ph="..." />
+            <marker date="1499094657062" expanded="true" signature="850:1342" ph="..." />
+            <marker date="1499094657062" expanded="true" signature="1148:1332" ph="..." />
+            <marker date="1499094657062" expanded="true" signature="1409:1445" ph="{...}" />
+            <marker date="1499094657062" expanded="true" signature="1480:1563" ph="{...}" />
+            <marker date="1499094657062" expanded="true" signature="1596:1653" ph="{...}" />
+            <marker date="1499094657062" expanded="true" signature="1730:1835" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/LouvreExtentension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <marker date="1499247151002" expanded="true" signature="66:292" ph="..." />
+            <marker date="1499247151002" expanded="true" signature="297:464" ph=" This is the class that loads and manages your bundle configuration ..." />
+            <marker date="1499247151002" expanded="true" signature="509:893" ph="{...}" />
+            <marker date="1499247151002" expanded="true" signature="519:546" ph=" {@inheritdoc} ..." />
+            <marker date="1499247151002" expanded="true" signature="618:891" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <marker date="1499247123201" expanded="true" signature="66:186" ph="..." />
+            <marker date="1499247123201" expanded="true" signature="191:416" ph=" This is the class that validates and merges configuration from your app/config files ..." />
+            <marker date="1499247123201" expanded="true" signature="472:701" ph="{...}" />
+            <marker date="1499247123201" expanded="true" signature="482:509" ph=" {@inheritdoc} ..." />
+            <marker date="1499247123201" expanded="true" signature="554:699" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1496722249000" expanded="true" signature="109:511" ph="security: &lt;2 keys&gt;" />
+            <marker date="1496722249000" expanded="true" signature="211:262" ph="providers: &lt;1 key&gt;" />
+            <marker date="1496722249000" expanded="true" signature="230:262" ph="in_memory: &lt;1 key&gt;" />
+            <marker date="1496722249000" expanded="true" signature="268:511" ph="firewalls: &lt;2 keys&gt;" />
+            <marker date="1496722249000" expanded="true" signature="383:471" ph="dev: &lt;2 keys&gt;" />
+            <marker date="1496722249000" expanded="true" signature="409:443" ph="^/(_(prof…mages|js)/" />
+            <marker date="1496722249000" expanded="true" signature="466:471" ph="false" />
+            <marker date="1496722249000" expanded="true" signature="481:511" ph="main: &lt;1 key&gt;" />
           </folding>
         </state>
       </provider>
@@ -1162,14 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/confirmation.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -1182,10 +1011,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1499247706691" expanded="true" signature="58:468" ph="parameters: &lt;12 keys&gt;" />
+            <marker date="1499247706691" expanded="true" signature="89:98" ph="127.0.0.1" />
+            <marker date="1499247706691" expanded="true" signature="118:122" ph="null" />
+            <marker date="1499247706691" expanded="true" signature="142:149" ph="symfony" />
+            <marker date="1499247706691" expanded="true" signature="169:173" ph="root" />
+            <marker date="1499247706691" expanded="true" signature="197:201" ph="null" />
+            <marker date="1499247706691" expanded="true" signature="224:228" ph="smtp" />
+            <marker date="1499247706691" expanded="true" signature="246:255" ph="127.0.0.1" />
+            <marker date="1499247706691" expanded="true" signature="273:277" ph="null" />
+            <marker date="1499247706691" expanded="true" signature="299:303" ph="null" />
+            <marker date="1499247706691" expanded="true" signature="316:356" ph="fbd72f572…1c7a744401" />
+            <marker date="1499247706691" expanded="true" signature="380:412" ph="sk_test_x…E7aQqw52z3" />
+            <marker date="1499247706691" expanded="true" signature="436:468" ph="pk_test_6…PaYf7wYwZM" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/Controller/TicketingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="54" column="121" lean-forward="false" selection-start-line="54" selection-start-column="121" selection-end-line="54" selection-end-column="121" />
+          <folding>
+            <marker date="1499247935330" expanded="true" signature="56:283" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="329:2233" ph="{...}" />
+            <marker date="1499247935330" expanded="true" signature="382:1095" ph="{...}" />
+            <marker date="1499247935330" expanded="true" signature="629:953" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="985:1086" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="1034:1085" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="1172:2230" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="1214:1984" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="1293:1588" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="1402:1572" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="1408:1571" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="1621:1849" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="2016:2223" ph="..." />
+            <marker date="1499247935330" expanded="true" signature="2070:2222" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/validation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="114" column="24" lean-forward="false" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+        <state relative-caret-position="280">
+          <caret line="46" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
           <folding>
             <marker date="1499094371533" expanded="true" signature="56:107" ph="{% block title ...%}" />
             <marker date="1499094371533" expanded="true" signature="109:492" ph="{% block subheader ...%}" />
@@ -1237,138 +1111,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/LouvreExtentension.php">
+    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/Resources/views/Ticket/confirmation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="168">
+          <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding>
-            <marker date="1499094442753" expanded="true" signature="66:292" ph="..." />
-            <marker date="1499094442753" expanded="true" signature="297:464" ph=" This is the class that loads and manages your bundle configuration ..." />
-            <marker date="1499094442753" expanded="true" signature="506:890" ph="{...}" />
-            <marker date="1499094442753" expanded="true" signature="516:543" ph=" {@inheritdoc} ..." />
-            <marker date="1499094442753" expanded="true" signature="615:888" ph="{...}" />
+            <marker date="1499248666926" expanded="true" signature="56:107" ph="{% block title ...%}" />
+            <marker date="1499248666926" expanded="true" signature="109:492" ph="{% block subheader ...%}" />
+            <marker date="1499248666926" expanded="true" signature="154:476" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="494:685" ph="{% block hightitle ...%}" />
+            <marker date="1499248666926" expanded="true" signature="542:669" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="591:658" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="687:4097" ph="{% block body ...%}" />
+            <marker date="1499248666926" expanded="true" signature="730:4081" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="761:1620" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="800:1605" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="897:1586" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="1230:1412" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="1462:1563" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="1652:4070" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="1700:4055" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="1796:1942" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="1839:1919" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="2002:2190" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="2045:2167" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="2254:2392" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="2297:2369" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="2452:2741" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="2495:2718" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="2805:2939" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="2848:2916" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="2999:4036" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="3042:4013" ph="..." />
+            <marker date="1499248666926" expanded="true" signature="4099:4156" ph="{% block javascripts ...%}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1499094657062" expanded="true" signature="11:100" ph="..." />
-            <marker date="1499094657062" expanded="true" signature="132:1837" ph="{...}" />
-            <marker date="1499094657062" expanded="true" signature="172:1375" ph="{...}" />
-            <marker date="1499094657062" expanded="true" signature="199:775" ph="..." />
-            <marker date="1499094657062" expanded="true" signature="850:1342" ph="..." />
-            <marker date="1499094657062" expanded="true" signature="1148:1332" ph="..." />
-            <marker date="1499094657062" expanded="true" signature="1409:1445" ph="{...}" />
-            <marker date="1499094657062" expanded="true" signature="1480:1563" ph="{...}" />
-            <marker date="1499094657062" expanded="true" signature="1596:1653" ph="{...}" />
-            <marker date="1499094657062" expanded="true" signature="1730:1835" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/DependencyInjection/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="21" column="56" lean-forward="false" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding>
-            <marker date="1499094405329" expanded="true" signature="70:190" ph="..." />
-            <marker date="1499094405329" expanded="true" signature="195:420" ph=" This is the class that validates and merges configuration from your app/config files ..." />
-            <marker date="1499094405329" expanded="true" signature="476:705" ph="{...}" />
-            <marker date="1499094405329" expanded="true" signature="486:513" ph=" {@inheritdoc} ..." />
-            <marker date="1499094405329" expanded="true" signature="558:703" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding>
-            <marker date="1499094608898" expanded="true" signature="0:184" ph="imports: &lt;4 items&gt;" />
-            <marker date="1499094608898" expanded="true" signature="27:41" ph="parameters.yml" />
-            <marker date="1499094608898" expanded="true" signature="62:74" ph="security.yml" />
-            <marker date="1499094608898" expanded="true" signature="95:107" ph="services.yml" />
-            <marker date="1499094608898" expanded="true" signature="128:182" ph="@LouvreTi…rvices.yml" />
-            <marker date="1499094608898" expanded="true" signature="378:404" ph="parameters: &lt;1 key&gt;" />
-            <marker date="1499094608898" expanded="true" signature="402:404" ph="en" />
-            <marker date="1499094608898" expanded="true" signature="406:1148" ph="framework: &lt;13 keys&gt;" />
-            <marker date="1499094608898" expanded="true" signature="486:496" ph="%secret%" />
-            <marker date="1499094608898" expanded="true" signature="501:603" ph="router: &lt;2 keys&gt;" />
-            <marker date="1499094608898" expanded="true" signature="527:572" ph="%kernel.p…outing.yml" />
-            <marker date="1499094608898" expanded="true" signature="643:683" ph="validation: {1 key}" />
-            <marker date="1499094608898" expanded="true" signature="677:681" ph="true" />
-            <marker date="1499094608898" expanded="true" signature="734:771" ph="templating: &lt;1 key&gt;" />
-            <marker date="1499094608898" expanded="true" signature="754:771" ph="engines: [1 item]" />
-            <marker date="1499094608898" expanded="true" signature="764:770" ph="twig" />
-            <marker date="1499094608898" expanded="true" signature="792:802" ph="%locale%" />
-            <marker date="1499094608898" expanded="true" signature="828:1052" ph="session: &lt;2 keys&gt;" />
-            <marker date="1499094608898" expanded="true" signature="949:976" ph="session.h…ative_file" />
-            <marker date="1499094608898" expanded="true" signature="996:1052" ph="%kernel.p…vironment%" />
-            <marker date="1499094608898" expanded="true" signature="1096:1100" ph="true" />
-            <marker date="1499094608898" expanded="true" signature="1119:1148" ph="php_errors: &lt;1 key&gt;" />
-            <marker date="1499094608898" expanded="true" signature="1144:1148" ph="true" />
-            <marker date="1499094608898" expanded="true" signature="1171:1367" ph="twig: &lt;4 keys&gt;" />
-            <marker date="1499094608898" expanded="true" signature="1188:1204" ph="%kernel.debug%" />
-            <marker date="1499094608898" expanded="true" signature="1227:1243" ph="%kernel.debug%" />
-            <marker date="1499094608898" expanded="true" signature="1248:1305" ph="form_themes: &lt;1 item&gt;" />
-            <marker date="1499094608898" expanded="true" signature="1275:1305" ph="bootstrap….html.twig" />
-            <marker date="1499094608898" expanded="true" signature="1310:1367" ph="globals: &lt;1 key&gt;" />
-            <marker date="1499094608898" expanded="true" signature="1346:1367" ph="%stripe_api_key_pk%" />
-            <marker date="1499094608898" expanded="true" signature="1451:2102" ph="doctrine: &lt;2 keys&gt;" />
-            <marker date="1499094608898" expanded="true" signature="1465:1636" ph="dbal: &lt;7 keys&gt;" />
-            <marker date="1499094608898" expanded="true" signature="1487:1496" ph="pdo_mysql" />
-            <marker date="1499094608898" expanded="true" signature="1511:1522" ph="localhost" />
-            <marker date="1499094608898" expanded="true" signature="1537:1543" ph="3306" />
-            <marker date="1499094608898" expanded="true" signature="1560:1568" ph="Louvre" />
-            <marker date="1499094608898" expanded="true" signature="1583:1589" ph="root" />
-            <marker date="1499094608898" expanded="true" signature="1608:1614" ph="root" />
-            <marker date="1499094608898" expanded="true" signature="1632:1636" ph="UTF8" />
-            <marker date="1499094608898" expanded="true" signature="1952:2102" ph="orm: &lt;3 keys&gt;" />
-            <marker date="1499094608898" expanded="true" signature="1994:2010" ph="%kernel.debug%" />
-            <marker date="1499094608898" expanded="true" signature="2036:2075" ph="doctrine.…underscore" />
-            <marker date="1499094608898" expanded="true" signature="2098:2102" ph="true" />
-            <marker date="1499094608898" expanded="true" signature="2132:2298" ph="swiftmailer: &lt;5 keys&gt;" />
-            <marker date="1499094608898" expanded="true" signature="2160:2180" ph="%mailer_transport%" />
-            <marker date="1499094608898" expanded="true" signature="2191:2206" ph="%mailer_host%" />
-            <marker date="1499094608898" expanded="true" signature="2221:2236" ph="%mailer_user%" />
-            <marker date="1499094608898" expanded="true" signature="2251:2270" ph="%mailer_password%" />
-            <marker date="1499094608898" expanded="true" signature="2275:2298" ph="spool: {1 key}" />
-            <marker date="1499094608898" expanded="true" signature="2290:2296" ph="memory" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <marker date="1499093939236" expanded="true" signature="58:468" ph="parameters: &lt;12 keys&gt;" />
-            <marker date="1499093939236" expanded="true" signature="89:98" ph="127.0.0.1" />
-            <marker date="1499093939236" expanded="true" signature="118:122" ph="null" />
-            <marker date="1499093939236" expanded="true" signature="142:149" ph="symfony" />
-            <marker date="1499093939236" expanded="true" signature="169:173" ph="root" />
-            <marker date="1499093939236" expanded="true" signature="197:201" ph="null" />
-            <marker date="1499093939236" expanded="true" signature="224:228" ph="smtp" />
-            <marker date="1499093939236" expanded="true" signature="246:255" ph="127.0.0.1" />
-            <marker date="1499093939236" expanded="true" signature="273:277" ph="null" />
-            <marker date="1499093939236" expanded="true" signature="299:303" ph="null" />
-            <marker date="1499093939236" expanded="true" signature="316:356" ph="fbd72f572…1c7a744401" />
-            <marker date="1499093939236" expanded="true" signature="380:412" ph="sk_test_B…lWgH4olfQ2" />
-            <marker date="1499093939236" expanded="true" signature="436:468" ph="pk_test_6…hFeQd4XMUh" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/Controller/TicketingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="845">
+          <caret line="389" column="0" lean-forward="true" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,1 +1,96 @@
-<h3>Votre commande a bien été pris en compte</h3>
+{% extends "LouvreTicketingBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }}
+{% endblock %}
+
+{% block subheader %}
+    <div class="images">
+        <li><img class="left" src="{{ asset('images/louvrephoto.jpg') }}" alt="Photo du louvre"></li>
+        <li><img class="center" src="{{ asset('images/photolouvre4.jpg') }}" alt="Photo du louvre"></li>
+        <li><img class="right" src="{{ asset('images/photolouvre2.jpg') }}" alt="Photo du louvre"></li>
+    </div>
+{% endblock %}
+
+{% block hightitle %}
+    <div class="container">
+        <h2>Commande effectuée</h2>
+        <h4>
+            Vous allez recevoir vos billets par mail
+        </h4>
+    </div>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="col-md-7">
+            <div class="date_reserve">
+                <h3 class="tabstep">Votre commande</h3>
+                <div class="well final">
+                    <h3>Vous allez bientôt rencontrer la Joconde !</h3>
+
+                    <p>Vous allez recevoir vos tickets par mail, ils seront à imprimer et à présenter à l'entrée du musée.</p>
+                    <p>Le mail vous est envoyé via celle que vous avez renseigné lors de votre commande.</p>
+                    <p>Si vous ne recevez pas de mail, veuillez nous contacter : <br/>
+                    Par mail : <a href="mailto:assistance@louvre.fr">assistance@louvre.fr</a>
+                    </p>
+                    <br/>
+                    <p>
+                        Nous vous souhaitons une agréable visite au Louvre.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="informations clearfix">
+                <h3>Aperçu</h3>
+                <hr/>
+                <div class="section_new">
+                    <div class="col-xs-4">
+                        Meilleur moment pour visiter
+                    </div>
+                </div>
+                <div class="section_informations clearfix">
+                    <div class="col-xs-8">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> Jeudi et vendredi
+                    </div>
+                </div>
+                <hr/>
+                <div class="section_new">
+                    <div class="col-xs-4">
+                        Horaires d'ouverture
+                    </div>
+                </div>
+                <div class="section_informations clearfix">
+                    <div class="col-xs-8">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i> Lundi, jeudi, samedi, dimanche : 9h00 - 18h.<br>
+                        Mercredi, vendredi : 9h00 - 21h45. Fermé le mardi
+                    </div>
+                </div>
+                <hr/>
+                <div class="section_new">
+                    <div class="col-xs-4">
+                        Les points forts
+                    </div>
+                </div>
+                <div class="section_informations clearfix">
+                    <div class="col-xs-8">
+                        <i class="fa fa-flag" aria-hidden="true"></i> Le Louvre, l'un des musées de référence au monde,
+                        abrite des collections d'arts et savoir-faire des civilisations anciennes jusqu'au milieu du 19e siècle<br/>
+                        <br>
+                        <i class="fa fa-flag" aria-hidden="true"></i> La Joconde, la Vénus de Milo ainsi que la Victoire Ailée sont des chefs-d'œuvre de renom mais le
+                        Louvre abrite plus de 35 000 trésors artistiques. Alors prévoyez suffisamment de temps pour votre visite<br/>
+                        <br>
+                        <i class="fa fa-flag" aria-hidden="true"></i> Évitez la file d'attente d'achat des billets. Muni de votre coupon, rendez-vous au kiosque à journaux sur la place voisine du Palais Royal
+                        pour obtenir votre billet papier. Vous n'avez plus qu'à entrer !<br/>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}

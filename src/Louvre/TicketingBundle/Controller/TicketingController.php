@@ -37,7 +37,7 @@ class TicketingController extends Controller
     public function validationAction(Request $request, Purchase $purchase){
 
         if($request->isMethod('POST')) {
-            $token = $request->get('stripeToken');
+            $token = $request->request->get('stripeToken');
 
             try {
                 Stripe::setApiKey($this->getParameter('stripe_api_key_sk'));
@@ -48,14 +48,11 @@ class TicketingController extends Controller
                 ));
 
             } catch (\Stripe\Error\Card $e) {
-                $this->addFlash('payment_error', 'Une erreur s\'est produite, veuillez recommencez');
+                $this->addFlash('payment_error', 'Une erreur s\'est produite, veuillez recommencer');
                 return $this->redirectToRoute('louvre_ticketing_validation', array('id' => $purchase->getId()));
             }
 
-            return $this->render('LouvreTicketingBundle:Ticket:confirmation;html;twig', [
-                'id'=> $purchase->getId(),
-                'totalPrice' => $purchase->getTotalPrice()
-            ]);
+            return $this->render('LouvreTicketingBundle:Ticket:confirmation.html.twig', array('id' => $purchase->getId()));
         }
 
         return $this->render('LouvreTicketingBundle:Ticket:validation.html.twig', [

@@ -12,7 +12,7 @@ use Symfony\Component\Config\FileLocator;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class LouvreExtension extends Extension
+class LouvreExtentension extends Extension
 {
     /**
      * {@inheritdoc}
