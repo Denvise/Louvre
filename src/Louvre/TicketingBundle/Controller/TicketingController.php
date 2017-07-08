@@ -20,8 +20,6 @@ class TicketingController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
-            $this->get('louvre_ticketing.tickets')->setPrice($purchase);
-            $this->get('louvre_ticketing.tickets')->setCount($purchase);
             $em->persist($purchase);
             $em->flush();
 
@@ -34,7 +32,7 @@ class TicketingController extends Controller
 
     }
 
-    public function validationAction(Request $request, Purchase $purchase){
+    public function validationAction(Request $request, Purchase $purchase, $name = null){
 
         if($request->isMethod('POST')) {
             $token = $request->request->get('stripeToken');
@@ -52,7 +50,9 @@ class TicketingController extends Controller
                 return $this->redirectToRoute('louvre_ticketing_validation', array('id' => $purchase->getId()));
             }
 
-            return $this->render('LouvreTicketingBundle:Ticket:confirmation.html.twig', array('id' => $purchase->getId()));
+            $this->get('louvre_ticketing.mailer')->sendMail($purchase, $name);
+
+            return $this->redirectToRoute('louvre_ticketing_confirmation', array('id' => $purchase->getId(), 'email'=> $purchase->getEmail()));
         }
 
         return $this->render('LouvreTicketingBundle:Ticket:validation.html.twig', [
@@ -60,5 +60,11 @@ class TicketingController extends Controller
             'tickets' => $purchase->getTickets(),
             'totalPrice' => $purchase->getTotalPrice(),
         ]);
+    }
+
+    public function confirmationAction(){
+
+        return $this->render('LouvreTicketingBundle:Ticket:confirmation.html.twig');
+
     }
 }

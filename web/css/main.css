@@ -339,19 +339,6 @@ li {
     border-radius:0px;
 }
 
-thead th {
-    border-right: 1px solid white;
-}
-
-thead {
-    background: #34373e;
-    color: #fff;
-}
-
-tbody {
-    background: white;
-}
-
 td {
     border-right:1px solid #ddd;
     border-bottom:1px solid #ddd;
@@ -367,9 +354,6 @@ td {
     font-size:18px;
 }
 
-tfoot {
-    background: #f9f9f9;
-}
 
 div#paiement_selection {
     text-align: center;
@@ -387,4 +371,22 @@ div#billet {
     margin-bottom: 15px;
 }
 
+h3.final  {
+    font-weight: bold;
+    margin-bottom:15px;
+}
 
+a.final {
+    color: #c65a4d;
+    text-decoration: none;
+}
+
+a:hover.final  {
+    color: #88352b;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.final p {
+    margin-bottom:20px;
+}

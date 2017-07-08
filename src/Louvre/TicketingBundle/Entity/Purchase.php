@@ -2,13 +2,16 @@
 
 namespace Louvre\TicketingBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints\DateTime;
 
 /**
  * Purchase
  *
  * @ORM\Table(name="purchase")
  * @ORM\Entity(repositoryClass="Louvre\TicketingBundle\Repository\PurchaseRepository")
+ * @ORM\HasLifecycleCallbacks
  */
 class Purchase
 {
@@ -197,6 +200,7 @@ class Purchase
      */
     public function __construct()
     {
+        $this->tickets = new ArrayCollection();
         $this->datePurchase = new \DateTime();
     }
 
@@ -254,6 +258,43 @@ class Purchase
     public function setTotalPrice($totalPrice)
     {
         $this->totalPrice = $totalPrice;
+    }
+
+    /**
+     * @ORM\PrePersist
+     */
+    public function prePersist(){
+
+        foreach ($this->tickets as $ticket){
+            $ticket->setPurchase($this);
+        }
+
+        $this->datePurchase = new \DateTime();
+
+        $this->nbrTickets = $this->tickets->count();
+
+        foreach ($this->tickets as $ticket){
+            $buyerBirthday = $ticket->getBuyerBirthday();
+            $buyerAge = $buyerBirthday->diff(new \DateTime());
+            $reducedPrice = $ticket->getReducedPrice();
+
+            if ($buyerAge->y < 4 && $reducedPrice == 0){
+                $ticket->setTicketPrice(number_format(0.00, 2));
+            } elseif ($buyerAge->y >= 4 && $buyerAge->y < 12 && $reducedPrice == 0){
+                $ticket->setTicketPrice(number_format(8.00, 2));
+            } elseif ($buyerAge->y >= 12 && $buyerAge->y < 60 && $reducedPrice == 0){
+                $ticket->setTicketPrice(number_format(16.00, 2));
+            } elseif ($buyerAge->y >= 60 && $reducedPrice == 0){
+                $ticket->setTicketPrice(number_format(12.00, 2));
+            } elseif ($reducedPrice == 1){
+                $ticket->setTicketPrice(number_format(10.00, 2));
+            }
+
+        }
+
+
+
+
     }
 
 

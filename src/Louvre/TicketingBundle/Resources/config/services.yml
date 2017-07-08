@@ -1,3 +1,11 @@
 services:
     louvre_ticketing.tickets:
         class: Louvre\TicketingBundle\Services\Tickets
+
+    louvre_ticketing.mailer:
+        class: Louvre\TicketingBundle\Services\SwiftMailer
+        arguments:
+            - "@twig"
+            - "@mailer"
+
+

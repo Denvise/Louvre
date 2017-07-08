@@ -7,3 +7,9 @@ louvre_ticketing_validation:
     defaults: { _controller: LouvreTicketingBundle:Ticketing:validation }
     requirements:
         id:  \d+
+
+louvre_ticketing_confirmation:
+    path: /confirmation/{id}
+    defaults: { _controller: LouvreTicketingBundle:Ticketing:confirmation }
+    requirements:
+        id: \d+
