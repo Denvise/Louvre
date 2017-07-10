@@ -1,1 +1,47 @@
-<h3>Simple test pour voir si ça fonctionne bordel</h3>
+<!DOCTYPE html>
+<html>
+<body>
+<img src="http://www.wondercity-agency.com/wp-content/uploads/2016/02/Louvre-logo.jpg" width="182"/>
+    <h1>Musée du Louvre</h1>
+    <h3>Confirmation de commande</h3>
+
+            <p><b>Code réservation :</b> BML000{{ purchase.id }}<br/>
+                <b>Date de visite :</b> {{ purchase.dateVisit|date('d/m/Y') }}</p>
+            <p>
+                <b>Type de billet :</b>
+                {% if purchase.typeTicket == "journee" %}
+                    Billet journée
+                {% else %}
+                    Billet demi-journée
+                {% endif %}
+            </p>
+    <p>
+        <b>Détails des billets :</b>
+        <br />
+        <br />
+        {% for ticket in tickets %}
+            <b>{{ ticket.buyerLastname|upper }} {{ ticket.buyerFirstname|capitalize }}</b>
+
+						{% if ticket.ticketPrice == 0.00 %}(Tarif enfant, moins de 4 ans){% endif %}
+                {% if ticket.ticketPrice == 8.00 %}(Tarif enfant, 4 à 12 ans){% endif %}
+                {% if ticket.ticketPrice == 16.00 %}(Tarif normal){% endif %}
+                {% if ticket.ticketPrice == 12.00 %}(Tarif senior, à partir de 60 ans){% endif %}
+                {% if ticket.ticketPrice == 10.00 %}(Tarif réduit){% endif %}
+
+            {{ ticket.ticketPrice|number_format(2) }} €
+            <br />
+            <hr/>
+        {% endfor %}
+    </p>
+<p><b>Montant total : {{ totalPrice|number_format(2) }} €</b></p>
+
+
+<img src="http://www.transbar.fr/choisir/choisir_databar/expanded_serie.gif" width="300"/><br/>
+
+    {{ purchaseID }}
+
+
+
+
+</body>
+</html>

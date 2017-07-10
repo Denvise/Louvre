@@ -3,6 +3,7 @@
 namespace Louvre\TicketingBundle\Controller;
 use Louvre\TicketingBundle\Entity\Purchase;
 use Louvre\TicketingBundle\Form\PurchaseType;
+use Spipu\Html2Pdf\Html2Pdf;
 use Stripe\Charge;
 use Stripe\Stripe;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -45,10 +46,24 @@ class TicketingController extends Controller
                     'source' => $token
                 ));
 
-            } catch (\Stripe\Error\Card $e) {
+            } catch (Stripe_Error $e) {
                 $this->addFlash('payment_error', 'Une erreur s\'est produite, veuillez recommencer');
                 return $this->redirectToRoute('louvre_ticketing_validation', array('id' => $purchase->getId()));
             }
+
+            $pdf = $this->renderView(
+                'LouvreTicketingBundle:Emails:tickets.html.twig',
+                array(
+                    'purchase'  => $purchase,
+                    'purchaseID' => sha1($purchase->getId()),
+                    'tickets' => $purchase->getTickets(),
+                    'totalPrice'  => $purchase->getTotalPrice()
+                ));
+
+            $html2pdf = new Html2Pdf('P', 'A4', 'fr');
+            $html2pdf->pdf->SetDisplayMode('real');
+            $html2pdf->writeHTML($pdf);
+            $html2pdf->output('PDF/billet-'.$purchase->getId().'.pdf', 'F');
 
             $this->get('louvre_ticketing.mailer')->sendMail($purchase, $name);
 

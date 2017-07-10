@@ -15,7 +15,7 @@ $(function() {
         language: "fr",
         daysOfWeekDisabled: '0, 2',
         startDate: '1',
-        datesDisabled: [year + '-01-10', year + '-05-01', year + '-05-08', year + '-07-14', year + '-08-15', year + '-11-01', year + '-11-11', year + '-12-25']
+        datesDisabled: [year + '-01-01', year + '-05-01', year + '-05-08', year + '-07-14', year + '-08-15', year + '-11-01', year + '-11-11', year + '-12-25']
     });
 
     $('#datepicker').on('changeDate', function() {
