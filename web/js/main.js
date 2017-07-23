@@ -10,6 +10,10 @@ $(function() {
     };
 
     var year = new Date().getFullYear();
+    var fullDate = new Date();
+    var twoDigitMonth = ((fullDate.getMonth() + 1) < 10) ? '0' + (fullDate.getMonth() + 1) : (fullDate.getMonth() + 1);
+    var currentDate = fullDate.getFullYear() + '-' + twoDigitMonth + '-' + fullDate.getDate();
+    var currentTime = fullDate.getHours();
 
     $('#datepicker').datepicker({
         language: "fr",
@@ -20,5 +24,12 @@ $(function() {
 
     $('#datepicker').on('changeDate', function() {
         $('#louvre_ticketingbundle_purchase_dateVisit').val($('#datepicker').datepicker('getFormattedDate'));
+        if ($('#datepicker').datepicker('getFormattedDate') == currentDate && currentTime >= 14) {
+            $('#louvre_ticketingbundle_purchase_typeTicket option[value="Demi-journée"]').prop('selected', true);
+            $('#louvre_ticketingbundle_purchase_typeTicket option[value="Journée"]').prop('disabled', true);
+        } else {
+            $('#louvre_ticketingbundle_purchase_typeTicket option[value="Demi-journée"]').prop('selected', false);
+            $('#louvre_ticketingbundle_purchase_typeTicket option[value="Journée"]').prop('disabled', false).prop('selected', true);
+        }
     });
 });

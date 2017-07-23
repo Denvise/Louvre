@@ -5,6 +5,7 @@ namespace Louvre\TicketingBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints\DateTime;
+use Louvre\TicketingBundle\Validator\Constraints as TicketingAssert;
 
 /**
  * Purchase
@@ -12,6 +13,7 @@ use Symfony\Component\Validator\Constraints\DateTime;
  * @ORM\Table(name="purchase")
  * @ORM\Entity(repositoryClass="Louvre\TicketingBundle\Repository\PurchaseRepository")
  * @ORM\HasLifecycleCallbacks
+ * @TicketingAssert\LimiterTicket
  */
 class Purchase
 {

@@ -80,6 +80,9 @@
                         {% filter escape %}
                              {{ include('LouvreTicketingBundle:Ticket:addticket.html.twig', {'form': form.tickets.vars.prototype }) }}
                             {% endfilter %}">
+                            {% for ticket in form.tickets %}
+                                {{ include('LouvreTicketingBundle:Ticket:addticket.html.twig', {'form': ticket }) }}
+                            {% endfor %}
                         </div>
                     </div>
                     <a href="#" id="add_ticket" class="btn btn-default">Ajouter un billet</a>

@@ -10,4 +10,17 @@ namespace Louvre\TicketingBundle\Repository;
  */
 class PurchaseRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function myCount($dateVisit, $count){
+        $qb = $this->createQueryBuilder('p')
+            ->select('sum(p.nbrTickets)')
+            ->where('p.dateVisit = :dateVisit')
+            ->setParameter('dateVisit', $dateVisit)
+            ->getQuery();
+        $nbrTicket = $qb->getSingleScalarResult();
+        if ((int)$nbrTicket + $count >= 1000) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }

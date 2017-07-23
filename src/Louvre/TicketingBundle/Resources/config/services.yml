@@ -8,4 +8,14 @@ services:
             - "@twig"
             - "@mailer"
 
+    louvre_ticketing.html2pdf:
+        class: Louvre\TicketingBundle\Services\Html2pdf
+        arguments:
+            - "@twig"
 
+    louvre_ticketing.limiter:
+        class: Louvre\TicketingBundle\Validator\Constraints\LimiterTicketValidator
+        arguments:
+            - "@doctrine.orm.entity_manager"
+        tags:
+            - { name: validator.constraint_validator, alias: limiter_ticket }
