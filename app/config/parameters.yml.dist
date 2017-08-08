@@ -15,5 +15,8 @@ parameters:
     mailer_user: ~
     mailer_password: ~
 
+    stripe_api_key_pk: pk_test_6SImzxSFZbb5GhPaYf7wYwZM
+    stripe_api_key_sk: sk_test_xcnQClKO8ahEUBE7aQqw52z3
+
     # A secret key that's used to generate certain security-related tokens
     secret: ThisTokenIsNotSoSecretChangeIt
