@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 class TestPurchaseType extends WebTestCase
 {
 
-    public function purchaseForm()
+    public function testPurchaseForm()
     {
 
         $client = static::createClient();
@@ -16,7 +16,7 @@ class TestPurchaseType extends WebTestCase
 
         $this->assertGreaterThan(
             0,
-            $crawler->filter('html:contains("Réservez")')->count());
+            $crawler->filter('html:contains("hello")')->count());
 
     }
 }

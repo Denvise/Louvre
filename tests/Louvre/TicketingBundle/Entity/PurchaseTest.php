@@ -12,27 +12,19 @@ class PurchaseTest extends WebTestCase {
     public function testAddTicket(){
 
         $purchase = new Purchase();
-        $purchase->setDateVisit('04/11/2017');
-        $purchase->setTypeTicket('Journée');
-        $purchase->setEmail('jarckrussel@orange.fr');
+        $purchase
+            ->setDateVisit('04/11/2017')
+            ->setTypeTicket('Journée')
+            ->setNbrTickets('3')
+            ->setEmail('jarckrussel@orange.fr')
+            ->setDatePurchase('03/11/2017');
 
-        $ticket = new Ticket();
-        $ticket->setBuyerFirstname('Jack');
-        $ticket->setBuyerLastname('Russel');
-        $ticket->setBuyerBirthday('01/01/1980');
-        $ticket->setBuyerCountry('FR');
-        $ticket->setReducedPrice(false);
-        $ticket->setTicketPrice('16');
-        $ticket->setPurchase($purchase);
 
-        $this->assertEquals('Russel', $ticket->getBuyerLastname());
-        $this->assertEquals('Jack', $ticket->getBuyerFirstname());
-        $this->assertEquals('jarckrussel@orange.fr', $purchase->getEmail());
-        $this->assertEquals('FR', $ticket->getBuyerCountry());
-        $this->assertEquals('01/01/1980', $ticket->getBuyerBirthday());
+        $this->assertEquals('04/11/2017', $purchase->getDateVisit());
         $this->assertEquals('Journée', $purchase->getTypeTicket());
-        $this->assertFalse($ticket->getReducedPrice());
-        $this->assertEquals(16, $ticket->getTicketPrice());
+        $this->assertEquals('3', $purchase->getNbrTickets());
+        $this->assertEquals('jarckrussel@orange.fr', $purchase->getEmail());
+        $this->assertEquals('03/11/2017', $purchase->getDatePurchase());
     }
 
 }
