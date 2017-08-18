@@ -6,6 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -39,7 +40,7 @@ class PurchaseType extends AbstractType
                 'allow_add' => true
                 ])
 
-            ->add('email', TextType::class, [
+            ->add('email', EmailType::class, [
                 'label' => 'Email :',
                 'attr' => ['placeholder' => 'exemple@mail.com']
             ])

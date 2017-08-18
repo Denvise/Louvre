@@ -20,7 +20,8 @@ class TicketingController extends Controller
         $form = $this->createForm(PurchaseType::class, $purchase);
 
         $em = $this->getDoctrine()->getManager();
-        if($request->isMethod('POST') && $form->handleRequest($request)->isValid()){
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
             $em->persist($purchase);
             $em->flush();
 
