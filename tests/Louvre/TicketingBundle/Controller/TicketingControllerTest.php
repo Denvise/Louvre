@@ -58,18 +58,22 @@ class TicketingControllerTest extends WebTestCase {
 
     }
 
-    public function testLimitTicket() {
+    public function testLimitTicket()
+    {
 
         $client = static::createClient();
+
         $container = $client->getContainer();
         $doctrine = $container->get('doctrine');
         $entityManager = $doctrine->getManager();
 
+
         $fixture = new LoadPurchase();
-        $purchase = $fixture->load($entityManager, true);
+        $purchase = $fixture->load($entityManager);
 
         $crawler = $client->request('GET', '/');
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
+
         $form = $crawler->selectButton('louvre_ticketingbundle_purchase[validate]')->form();
 
         $data = array(
@@ -78,13 +82,26 @@ class TicketingControllerTest extends WebTestCase {
                 'typeTicket' => 'Journée',
                 'email' => 'dfgdfgd@email.com',
                 'tickets' => array(
-                    0 => array (
+                    0 => array(
                         'buyerFirstname' => 'Firstname',
                         'buyerLastname' => 'Lastname',
                         'buyerCountry' => 'FR',
                         'reducedPrice' => '0',
                         'buyerBirthday' => array(
                             'year' => '1970',
+                            'month' => '10',
+                            'day' => '10'
+                        ),
+                    )
+                ),
+                'tickets' => array(
+                    1 => array(
+                        'buyerFirstname' => 'Tosh',
+                        'buyerLastname' => 'Iba',
+                        'buyerCountry' => 'FR',
+                        'reducedPrice' => '0',
+                        'buyerBirthday' => array(
+                            'year' => '1980',
                             'month' => '10',
                             'day' => '10'
                         ),
@@ -97,6 +114,5 @@ class TicketingControllerTest extends WebTestCase {
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
 
     }
-
 
 }

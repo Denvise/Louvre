@@ -12,12 +12,11 @@ class LoadPurchase implements FixtureInterface {
     public function load(ObjectManager $manager){
 
 
-        for($i = 1; $i <= 999; $i++) {
+        for($i = 1; $i <= 1000; $i++) {
 
             $purchase = new Purchase();
             $purchase->setDatePurchase(new \DateTime('2017-09-21'));
             $purchase->setDateVisit(new \DateTime('2017-09-23'));
-            $purchase->setNbrTickets(999);
             $purchase->setTypeTicket('Journée');
             $purchase->setEmail('test@test.com');
             $purchase->setTotalPrice(15984);
@@ -31,8 +30,11 @@ class LoadPurchase implements FixtureInterface {
 
             $purchase->addTicket($ticket);
             $manager->persist($purchase);
-            $manager->flush();
         }
+
+        $manager->flush();
+        return $purchase;
+
 
     }
 
