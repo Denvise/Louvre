@@ -291,8 +291,8 @@ class Purchase
             } elseif ($reducedPrice == 1){
                 $ticket->setTicketPrice(number_format(10.00, 2));
             }
-
         }
+
 
 
 

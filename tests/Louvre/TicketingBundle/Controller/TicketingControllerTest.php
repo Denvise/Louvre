@@ -20,8 +20,8 @@ class TicketingControllerTest extends WebTestCase {
     public function provideUrls(){
         return array(
             array('/'),
-            array('/validation/10'),
-            array('/confirmation/10'),
+            array('/validation/31270'),
+            array('/confirmation/31270'),
         );
     }
 
@@ -86,7 +86,7 @@ class TicketingControllerTest extends WebTestCase {
                         'buyerFirstname' => 'Firstname',
                         'buyerLastname' => 'Lastname',
                         'buyerCountry' => 'FR',
-                        'reducedPrice' => '0',
+                        'reducedPrice' => 0,
                         'buyerBirthday' => array(
                             'year' => '1970',
                             'month' => '10',
@@ -94,19 +94,7 @@ class TicketingControllerTest extends WebTestCase {
                         ),
                     )
                 ),
-                'tickets' => array(
-                    1 => array(
-                        'buyerFirstname' => 'Tosh',
-                        'buyerLastname' => 'Iba',
-                        'buyerCountry' => 'FR',
-                        'reducedPrice' => '0',
-                        'buyerBirthday' => array(
-                            'year' => '1980',
-                            'month' => '10',
-                            'day' => '10'
-                        ),
-                    )
-                ),
+
                 '_token' => $form['louvre_ticketingbundle_purchase[_token]']->getValue(),
             )
         );
