@@ -70,6 +70,7 @@ class TicketingControllerTest extends WebTestCase {
 
         $fixture = new LoadPurchase();
         $purchase = $fixture->load($entityManager);
+        var_dump($purchase);
 
         $crawler = $client->request('GET', '/');
         $this->assertEquals(200, $client->getResponse()->getStatusCode());

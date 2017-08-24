@@ -4,7 +4,6 @@
     <list default="true" id="6ccdfd01-b2ac-4eae-9bd1-c78ee4e5bcaf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Louvre/TicketingBundle/DataFixtures/ORM/LoadPurchase.php" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/DataFixtures/ORM/LoadPurchase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Entity/Purchase.php" afterPath="$PROJECT_DIR$/src/Louvre/TicketingBundle/Entity/Purchase.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Louvre/TicketingBundle/Controller/TicketingControllerTest.php" afterPath="$PROJECT_DIR$/tests/Louvre/TicketingBundle/Controller/TicketingControllerTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TicketingControllerTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Louvre/TicketingBundle/Controller/TicketingControllerTest.php">
+      <file leaf-file-name="LoadPurchase.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/DataFixtures/ORM/LoadPurchase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="92" column="41" lean-forward="true" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+            <state relative-caret-position="410">
+              <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -103,8 +102,8 @@
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/Controller/TicketingController.php" />
         <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/Entity/Purchase.php" />
-        <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/DataFixtures/ORM/LoadPurchase.php" />
         <option value="$PROJECT_DIR$/tests/Louvre/TicketingBundle/Controller/TicketingControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/Louvre/TicketingBundle/DataFixtures/ORM/LoadPurchase.php" />
       </list>
     </option>
   </component>
@@ -764,18 +763,19 @@
       <workItem from="1503142530852" duration="1103000" />
       <workItem from="1503324306144" duration="3994000" />
       <workItem from="1503330169451" duration="2860000" />
-      <workItem from="1503564196502" duration="1251000" />
+      <workItem from="1503564196502" duration="1833000" />
+      <workItem from="1503589033444" duration="2061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205386000" />
+    <option name="totallyTimeSpent" value="208029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="33" width="1922" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24865156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25296655" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -970,17 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <marker date="1499705693811" expanded="true" signature="117:1057" ph="..." />
-            <marker date="1499705693811" expanded="true" signature="243:310" ph="..." />
-            <marker date="1499705693811" expanded="true" signature="362:1054" ph="..." />
-            <marker date="1499705693811" expanded="true" signature="438:464" ph="..." />
-            <marker date="1499705693811" expanded="true" signature="488:543" ph="..." />
-            <marker date="1499705693811" expanded="true" signature="565:586" ph="..." />
-            <marker date="1499705693811" expanded="true" signature="617:628" ph="..." />
-            <marker date="1499705693811" expanded="true" signature="652:915" ph="..." />
-            <marker date="1499705693811" expanded="true" signature="938:1006" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,85 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2413">
           <caret line="318" column="20" lean-forward="false" selection-start-line="318" selection-start-column="20" selection-end-line="318" selection-end-column="20" />
-          <folding>
-            <marker date="1494927130000" expanded="true" signature="36:2112" ph="..." />
-            <marker date="1494927130000" expanded="true" signature="62:578" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="646:1045" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="1093:1292" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="1336:1480" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="1527:1853" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="1899:2077" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="2169:11548" ph="..." />
-            <marker date="1494927130000" expanded="true" signature="2195:3393" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="3473:3642" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="3705:4056" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="4155:4683" ph=" (PHP 5 &amp;gt;=5.6.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="4763:4995" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="5053:5544" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="5596:5953" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="6021:6489" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="6553:7044" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="7114:7730" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="7821:8254" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="8318:8826" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="8897:9406" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="9469:9996" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="10067:10466" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="10517:10716" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="10763:10907" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="10957:11283" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="11332:11510" ph=" (PHP 5 &amp;gt;=5.5.0)&lt;br/&gt; ..." />
-            <marker date="1494927130000" expanded="true" signature="11555:11646" ph=" Representation of date and time. ..." />
-            <marker date="1494927130000" expanded="true" signature="11694:17370" ph="..." />
-            <marker date="1494927130000" expanded="true" signature="12118:12273" ph=" @param string $time ..." />
-            <marker date="1494927130000" expanded="true" signature="12362:12446" ph=" @return void ..." />
-            <marker date="1494927130000" expanded="true" signature="12493:12665" ph=" Returns date formatted according to given format. ..." />
-            <marker date="1494927130000" expanded="true" signature="12716:13162" ph=" Alter the timestamp of a DateTime object by incrementing or decrementing ..." />
-            <marker date="1494927130000" expanded="true" signature="13213:13427" ph=" Adds an amount of days, months, years, hours, minutes and seconds to a DateTime object ..." />
-            <marker date="1494927130000" expanded="true" signature="13490:13711" ph=" Subtracts an amount of days, months, years, hours, minutes and seconds from a DateTime object ..." />
-            <marker date="1494927130000" expanded="true" signature="13774:13924" ph=" Get the TimeZone associated with the DateTime ..." />
-            <marker date="1494927130000" expanded="true" signature="13973:14154" ph=" Set the TimeZone associated with the DateTime ..." />
-            <marker date="1494927130000" expanded="true" signature="14212:14333" ph=" Returns the timezone offset ..." />
-            <marker date="1494927130000" expanded="true" signature="14380:14705" ph=" Sets the current time of the DateTime object to a different time. ..." />
-            <marker date="1494927130000" expanded="true" signature="14792:15024" ph=" Sets the current date of the DateTime object to a different date. ..." />
-            <marker date="1494927130000" expanded="true" signature="15088:15360" ph=" Set a date according to the ISO 8601 standard - using weeks and day offsets rather than specific dates. ..." />
-            <marker date="1494927130000" expanded="true" signature="15428:15610" ph=" Sets the date and time based on a Unix timestamp. ..." />
-            <marker date="1494927130000" expanded="true" signature="15674:15795" ph=" Gets the Unix timestamp. ..." />
-            <marker date="1494927130000" expanded="true" signature="15845:16277" ph=" Returns the difference between two DateTime objects represented as a DateInterval. ..." />
-            <marker date="1494927130000" expanded="true" signature="16349:16746" ph=" Parse a string into a new DateTime object according to the specified format ..." />
-            <marker date="1494927130000" expanded="true" signature="16850:17028" ph=" Returns an array of warnings and errors found while parsing a date/time string ..." />
-            <marker date="1494927130000" expanded="true" signature="17086:17316" ph=" The __set_state handler ..." />
-            <marker date="1494927130000" expanded="true" signature="17376:17466" ph=" Representation of time zone ..." />
-            <marker date="1494927130000" expanded="true" signature="17489:19488" ph="..." />
-            <marker date="1494927130000" expanded="true" signature="17841:17943" ph=" @param string $timezone ..." />
-            <marker date="1494927130000" expanded="true" signature="18001:18132" ph=" Returns the name of the timezone ..." />
-            <marker date="1494927130000" expanded="true" signature="18177:18322" ph=" Returns location information for a timezone ..." />
-            <marker date="1494927130000" expanded="true" signature="18371:18538" ph=" Returns the timezone offset from GMT ..." />
-            <marker date="1494927130000" expanded="true" signature="18603:18838" ph=" Returns all transitions for the timezone ..." />
-            <marker date="1494927130000" expanded="true" signature="18933:19111" ph=" Returns associative array containing dst, offset and the timezone name ..." />
-            <marker date="1494927130000" expanded="true" signature="19173:19398" ph=" Returns a numerically indexed array with all timezone identifiers ..." />
-            <marker date="1494927130000" expanded="true" signature="19494:19762" ph=" Representation of date interval. A date interval stores either a fixed amount of ..." />
-            <marker date="1494927130000" expanded="true" signature="19785:21184" ph="..." />
-            <marker date="1494927130000" expanded="true" signature="19793:19838" ph=" Number of years ..." />
-            <marker date="1494927130000" expanded="true" signature="19864:19910" ph=" Number of months ..." />
-            <marker date="1494927130000" expanded="true" signature="19936:19980" ph=" Number of days ..." />
-            <marker date="1494927130000" expanded="true" signature="20006:20051" ph=" Number of hours ..." />
-            <marker date="1494927130000" expanded="true" signature="20077:20124" ph=" Number of minutes ..." />
-            <marker date="1494927130000" expanded="true" signature="20150:20197" ph=" Number of seconds ..." />
-            <marker date="1494927130000" expanded="true" signature="20223:20301" ph=" Is 1 if the interval is inverted and 0 otherwise ..." />
-            <marker date="1494927130000" expanded="true" signature="20332:20444" ph=" Total number of days the interval spans. If this is unknown, days will be FALSE. ..." />
-            <marker date="1494927130000" expanded="true" signature="20474:20663" ph=" @param string $interval_spec ..." />
-            <marker date="1494927130000" expanded="true" signature="20726:20866" ph=" Formats the interval ..." />
-            <marker date="1494927130000" expanded="true" signature="20917:21122" ph=" Sets up a DateInterval from the relative parts of the string ..." />
-            <marker date="1494927130000" expanded="true" signature="21190:21297" ph=" Representation of date period. ..." />
-            <marker date="1494927130000" expanded="true" signature="21341:23092" ph="..." />
-            <marker date="1494927130000" expanded="true" signature="21384:21659" ph=" @param DateTimeInterface $start ..." />
-            <marker date="1494927130000" expanded="true" signature="21792:22083" ph=" @param DateTimeInterface $start ..." />
-            <marker date="1494927130000" expanded="true" signature="22206:22433" ph=" @param string $isostr String containing the ISO interval. ..." />
-            <marker date="1494927130000" expanded="true" signature="22501:22649" ph=" Gets the interval ..." />
-            <marker date="1494927130000" expanded="true" signature="22702:22850" ph=" Gets the end date ..." />
-            <marker date="1494927130000" expanded="true" signature="22898:23050" ph=" Gets the start date ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,10 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1497869056216" expanded="true" signature="56:179" ph=" TicketRepository ..." />
-            <marker date="1497869056216" expanded="true" signature="243:247" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1170,16 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1500637536339" expanded="true" signature="56:181" ph=" PurchaseRepository ..." />
-            <marker date="1500637536339" expanded="true" signature="247:696" ph="{...}" />
-            <marker date="1500637536339" expanded="true" signature="298:693" ph="..." />
-            <marker date="1500637536339" expanded="true" signature="365:384" ph="..." />
-            <marker date="1500637536339" expanded="true" signature="406:432" ph="..." />
-            <marker date="1500637536339" expanded="true" signature="461:484" ph="..." />
-            <marker date="1500637536339" expanded="true" signature="610:645" ph="..." />
-            <marker date="1500637536339" expanded="true" signature="653:687" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1187,29 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="845">
           <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="31" />
-          <folding>
-            <marker date="1498667166213" expanded="true" signature="51:489" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="528:2104" ph="{...}" />
-            <marker date="1498667166213" expanded="true" signature="538:565" ph=" {@inheritdoc} ..." />
-            <marker date="1498667166213" expanded="true" signature="644:1730" ph="{...}" />
-            <marker date="1498667166213" expanded="true" signature="686:832" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="721:831" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="852:1003" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="888:1002" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="1023:1220" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="1060:1219" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="1241:1571" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="1280:1570" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="1425:1556" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="1591:1722" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="1629:1721" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="1743:1770" ph=" {@inheritdoc} ..." />
-            <marker date="1498667166213" expanded="true" signature="1836:1965" ph="{...}" />
-            <marker date="1498667166213" expanded="true" signature="1874:1957" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="1880:1956" ph="..." />
-            <marker date="1498667166213" expanded="true" signature="1974:2001" ph=" {@inheritdoc} ..." />
-            <marker date="1498667166213" expanded="true" signature="2040:2100" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1287,9 +1160,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1497866382034" expanded="true" signature="133:137" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1356,23 +1226,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/DataFixtures/ORM/LoadPurchase.php">
+    <entry file="file://$PROJECT_DIR$/tests/Louvre/TicketingBundle/Controller/TicketingControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        <state relative-caret-position="298">
+          <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
           <folding>
-            <marker date="1503564711094" expanded="true" signature="63:242" ph="..." />
-            <marker date="1503564711094" expanded="true" signature="292:1086" ph="..." />
-            <marker date="1503564711094" expanded="true" signature="343:1083" ph="..." />
-            <marker date="1503564711094" expanded="true" signature="641:983" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="64:170" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="223:3489" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="233:272" ph=" @dataProvider provideUrls ..." />
+            <marker date="1503589199724" expanded="true" signature="310:463" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="499:643" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="521:636" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="682:1927" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="966:1798" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="1022:1788" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="1194:1683" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="1227:1665" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="1484:1642" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="1967:3487" ph="{...}" />
+            <marker date="1503589199724" expanded="true" signature="2527:3357" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="2583:3347" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="2755:3241" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="2787:3223" ph="..." />
+            <marker date="1503589199724" expanded="true" signature="3042:3200" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Louvre/TicketingBundle/Controller/TicketingControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/src/Louvre/TicketingBundle/DataFixtures/ORM/LoadPurchase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="92" column="41" lean-forward="true" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+        <state relative-caret-position="410">
+          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
           <folding />
         </state>
       </provider>
