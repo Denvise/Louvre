@@ -18,7 +18,7 @@ class LoadPurchase implements FixtureInterface {
         $purchase->setEmail('test@test.com');
 
 
-        for($i = 1; $i <= 2; $i++) {
+        for($i = 1; $i <= 1000 ; $i++) {
 
             $ticket = new Ticket();
             $ticket->setBuyerLastname('Tester');
