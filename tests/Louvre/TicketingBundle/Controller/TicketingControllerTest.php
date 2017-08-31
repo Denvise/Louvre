@@ -10,6 +10,26 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class TicketingControllerTest extends WebTestCase {
 
+    /**
+     * @dataProvider provideUrls
+     */
+    public function testUrls($url)
+    {
+        $client = static::createClient();
+        $client->request('GET', $url);
+
+        $this->assertTrue($client->getResponse()->isSuccessful());
+    }
+
+    public function provideUrls()
+    {
+        return array(
+            array('/'),
+            array('/validation/6'),
+            array('/confirmation/6'),
+        );
+    }
+
 
     public function testPurchase() {
 
@@ -91,24 +111,27 @@ class TicketingControllerTest extends WebTestCase {
 
     }
 
-    public function testSwiftMailer(){
-
-
-        $client = static::createClient();
-        $container = $client->getContainer();
-        $doctrine = $container->get('doctrine');
-        $entityManager = $doctrine->getManager();
-
-        $fixture = new LoadMailerPurchase();
-        $swiftmailer = $fixture->load($entityManager);
-        $client->enableProfiler();
-        $crawler = $client->request('POST', '/confirmation/6');
-        $mailCollector = $client->getProfile()->getCollector('swiftmailer');
-
-        $this->assertEquals(1, $mailCollector->getMessageCount());
-
-
-
-    }
+//    public function testSwiftMailer(){
+//
+//
+//        $client = static::createClient();
+//        $container = $client->getContainer();
+//        $doctrine = $container->get('doctrine');
+//        $entityManager = $doctrine->getManager();
+//
+//        $fixture = new LoadPurchase();
+//        $mailer = $fixture->load($entityManager);
+//        $client->enableProfiler();
+//        $crawler = $client->request('POST', '/validation/6');
+//        $this->assertEquals(302, $client->getResponse()->getStatusCode());
+//
+//        $mailCollector = $client->getProfile()->getCollector('swiftmailer');
+//
+//        $this->assertEquals(1, $mailCollector->getMessageCount());
+//
+//        $collectedMessages = $mailCollector->getMessages();
+//        $message = $collectedMessages[0];
+//
+//    }
 
 }

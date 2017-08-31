@@ -20,7 +20,7 @@ class SwiftMailer {
 
         $message = \Swift_Message::newInstance()
             ->setSubject('Confirmation de commande')
-            ->setFrom(array('contact@thomascherel.com' => "Musée du Louvre" ))
+            ->setFrom(array('louvre@thomascherel.com' => "Musée du Louvre" ))
             ->setTo($purchase->getEmail())
             ->setContentType('text/html')
             ->setBody('
